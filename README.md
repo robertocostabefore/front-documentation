@@ -12,8 +12,8 @@ Principalmente a descentralização e pelo fato de os usuários desativados não
 
 # ESTRUTURA
   # src
-    arquivos relacionados ao html presente no link =>
-      
+    arquivos relacionados ao html presente no link => https://robertocostabefore.github.io/front-documentation
+
   # DOCS
     Cada pasta dessa documentação representa um projeto sendo eles SUN e HUB, além disso há a pasta TIME
     Essa pasta TIME contém acordos do time, metas/objetivos e além disso o fluxo esperado de desenvolvimento,
