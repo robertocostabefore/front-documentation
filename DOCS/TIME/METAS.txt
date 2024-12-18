@@ -1,0 +1,20 @@
+# METAS
+descrição:
+  - metas e objetivos para melhorarmos como um time e termos melhores entregas
+
+METAS PARA 2025
+  # 1
+    Melhorarmos no quesito estimativa
+      - Estimativas mais precisas e acertivas
+      - Cumprir as estimativas de tempo
+      -
+
+  # 2
+    Diminuir retrabalho
+      - Prestar atenção nas documentações dos cards para evitar erros de regra de negócio
+      - Testar o código não somente no fluxo feliz
+            fingir ser um retard*** (vulgo cliente) e tentar quebrar mesmo, se tu ve um botão de voltar, clica nele poura
+      - 
+
+  # 3
+  
