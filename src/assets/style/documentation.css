@@ -1,0 +1,15 @@
+@import url('navbar.css');
+
+#agreements {
+  margin-top: 100px;
+}
+
+#agreements,
+#about,
+#enterprise {
+  scroll-margin-top: 100px;
+}
+
+img {
+  width: 100%;
+}

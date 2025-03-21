@@ -1,12 +1,4 @@
-.header {
-  font-family: sans-serif;
-  .title {
-    font-size: 32px;
-    color: #660099;
-    font-weight: bold;
-    text-align: center;
-  }
-}
+@import url('navbar.css');
 
 body {
   font-family: sans-serif;

@@ -1,17 +1,17 @@
-function renderMetas(metas) {
-  const content = document.getElementById("content");
+function renderGoals({ description, goals, containerId }) {
+  const content = document.getElementById(containerId);
 
   // Adiciona uma descrição principal
   const titleDiv = document.createElement("div");
-  titleDiv.className = "title mb-3 fw-bold";
-  titleDiv.textContent = metas.description;
+  titleDiv.className = "title mb-3 mt-3 fw-bold";
+  titleDiv.textContent = description;
   content.appendChild(titleDiv);
 
   // Cria a lista ordenada com as classes do Bootstrap
   const goalsList = document.createElement("ol");
   goalsList.className = "list-group list-group-numbered mb-3";
 
-  metas.goals2025.forEach((goal) => {
+  goals.forEach((goal) => {
     // Cria o item da lista com as classes Bootstrap
     const goalItem = document.createElement("li");
     goalItem.className = "list-group-item d-flex justify-content-between align-items-start";
@@ -44,4 +44,6 @@ function renderMetas(metas) {
   content.appendChild(goalsList);
 }
 
-export default renderMetas
+export {
+  renderGoals
+}
