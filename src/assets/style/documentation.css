@@ -1,6 +1,15 @@
 @import url('navbar.css');
 
-#agreements {
+:root {
+  --bs-body-bg: #180B05 !important;
+}
+
+.documentation {
+  background-color: #000;
+  color: #FFF;
+}
+
+.title {
   margin-top: 100px;
 }
 
@@ -12,4 +21,29 @@
 
 img {
   width: 100%;
+}
+
+.container-cards {
+  margin-top: 32px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card {
+  display: flex !important;
+  border: 1px solid !important;
+  justify-content: center;
+  background-color: var(--primary-color) !important;
+  padding: 32px;
+  width: calc(25% - 16px) !important;
+  min-width: 250px !important;
+  height: 200px !important;
+
+  .title {
+    margin: 0px;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
 }

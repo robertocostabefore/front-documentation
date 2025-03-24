@@ -1,10 +1,12 @@
 import { handleRenderNavbar } from '../shared/navbar.js'
-import { renderGoals } from "../shared/renderGoals.js"
+import { renderOrderedList } from "../shared/renderOrderedList.js"
 import goals from "./goals.js"
+import agreements from './agreements.js'
 
 handleRenderNavbar("hub")
 
-renderGoals({ description: goals.description, goals: goals.goals2025, containerId: 'container-goals' })
+renderOrderedList({ description: goals.description, goals: goals.goals2025, containerId: 'container-goals' })
+renderOrderedList({ description: agreements.description, goals: agreements.agreements, containerId: 'container-agreements'})
 
 // fluxo de refatoracao =>
 // sem ajuste/melhoria/epico =>

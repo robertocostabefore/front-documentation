@@ -1,7 +1,35 @@
 @import url('navbar.css');
 
+:root {
+  /* variáveis locais */
+  --documentation-primary-color: #F86E32;
+  --documentation-body-color: #180B05;
+  --hub-primary-color: #0937D6;
+  --hub-body-color: #030E33;
+  --pap-primary-color: #660099;
+  --pap-body-color: #200030;
+
+  --primary-color: var(--documentation-primary-color) !important;
+  --body-color: var(--documentation-body-color) !important;
+
+  /* sobreescrita de variaveis do bootstrap */
+  --bs-body-bg: var(--body-color) !important;
+  --bs-heading-color: #FFF !important;
+  --bs-body-color: #FFF !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+html {
+  scrollbar-width: 0px;
+}
+
 body {
   font-family: sans-serif;
+  -ms-overflow-style: none !important;
 }
 
 .container {
@@ -15,11 +43,5 @@ body {
   }
   .content {
     font-size: 16px;
-    .list {
-
-    }
-    .list-item {
-
-    }
   }
 }

@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/images/cat.png">
-    <link rel="stylesheet" href="assets/style/documentation.css">
     <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/hub.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>DOC</title>
   </head>
@@ -13,23 +13,192 @@
     <div id="navbar"></div>
     <div class="body">
       <div class="container">
-        <h5 class="title mt-3">
+        <h5 class="title mb-5">
           Documentação do Projeto HUB de vendas
         </h5>
-        <section id="agreements">
-          <h2 class="h2"># Acordos</h2>
-          <div id="content-agreements" class="mb-5" />
-        </section>
-        <section id="about">
-          <h2 class="h2"># Sobre</h2>
-          <div id="content-about" class="mb-5">
-            Esse projeto é um sistema de vendas 🐱👍
+        <div class="row justify-content-md-center">
+          <div class="col col-sm-0 col-md-0 col-lg-3 col-xl-3">
+            <aside class="bd-sidebar">
+              <div class="offcanvas-lg offcanvas-start">
+                <div class="offcanvas-body">
+                  <nav class="bd-links w-100" id="bd-docs-nav">
+                    <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+                      <li class="bd-links-group py-2">
+                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-bold">
+                          HUB
+                        </strong>
+                        <ul class="list-unstyled fw-semibold pb-2">
+                          <li>
+                            <a href="#agreements" class="bd-links-link">
+                              # Acordos
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#about" class="bd-links-link">
+                              # Sobre
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#goals" class="bd-links-link">
+                              # metas
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="bd-links-group py-2">
+                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-bold">
+                          GET STARTED
+                        </strong>
+                        <ul class="list-unstyled fw-semibold pb-2">
+                          <li>
+                            <a href="#instalation" class="bd-links-link">
+                              # Instalação
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#execution" class="bd-links-link">
+                              # Execução
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#new-client" class="bd-links-link">
+                              # Novo Cliente
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="bd-links-group py-2">
+                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-bold">
+                          COMANDOS ÚTEIS
+                        </strong>
+                        <ul class="list-unstyled fw-semibold pb-2">
+                          <li>
+                            <a href="#utils" class="bd-links-link">
+                              comming soon...
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="bd-links-group py-2">
+                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-bold">
+                          TECNOLOGIAS
+                        </strong>
+                        <ul class="list-unstyled fw-semibold pb-2">
+                          <li>
+                            <a href="#technologies" class="bd-links-link">
+                              comming soon...
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div> 
+            </aside>
           </div>
-        </section>
-        <section id="goals">
-          <h2 class="h2"># Metas</h2>
-          <div id="container-goals" class="mb-5" />
-        </section>
+          <div class="col col-sm-12 col-md-12 col-lg-9 col-xl-9">
+            <section id="agreements">
+              <h2 class="h2"># Acordos</h2>
+              <div id="container-agreements" class="mb-5" />
+            </section>
+            <section id="about">
+              <h2 class="h2"># Sobre</h2>
+              <div id="content-about" class="mb-5">
+                <p>O HUB é um sistema de Vendas</p>
+                <p>Sua utilização é vendida, quem compra essa utilização é chamado de PROVEDOR</p>
+                <p>Cada provedor tem suas configurações de como o sistema parece</p>
+              </div>
+            </section>
+            <section id="goals">
+              <h2 class="h2"># Metas</h2>
+              <div id="container-goals" class="mb-5" />
+            </section>
+            <section id="get-started">
+              <h2 class="h2"># GET STARTED</h2>
+              <section id="instalation" class="mb-5">
+                <h2 class="h2"># Instalação</h2>
+                <div class="content mb-5">
+                  <ol class="list-group list-group-numbered fw-normal pb-2">
+                    <li class="list-group-item">
+                      Crie um fork pessoal a partir deste repositório <a href="https://github.com/beforeti/hubvendas-web">REPOSITÓRIO-HUB</a>
+                    </li>
+                    <li class="list-group-item">
+                      Clone o fork em seu ambiente local (git clone...)
+                    </li>
+                    <li class="list-group-item">
+                      Após a clonagem, entre no diretório <code>./hubvendas-web</code> e insira um remote correspondente ao repositório original
+                      <div class="code-container">
+                        <code class="code">
+                          git remote add hub https://github.com/beforeti/hubvendas-web.git
+                        </code>
+                      </div>
+
+                      OBS: Isso é para poder manter o teu local sincronizado com o repositório do HUB
+                    </li>
+                    <li class="list-group-item">
+                      Duplique o arquivo <code>.env.example</code> e o renomeie para <code>.env</code>
+                    </li>
+                    <li class="list-group-item">
+                      Configure seu .env para o ambiente de desenvolvimento:
+                      <div class="code-container">
+                        <code class="code">
+                          VUE_APP_ENV=development
+                        </code>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      Agora é preciso configurar os acessos ao Localhost para simular o acesso de cada Provider
+                      <br>
+                      - No terminal execute:
+                      <div class="code-container">
+                        <code class="code">
+                          sudo  nano /etc/hosts
+                        </code>
+                      </div>
+                      - Edite o arquivo para que contenha os provedores:
+                      <div class="code-container">
+                        <code class="code">
+                          127.0.0.1       local.hubdevendas.localhost
+                          127.0.0.1       local-alares.hubdevendas.localhost
+                          127.0.0.1       local-neonfibra.hubdevendas.localhost
+                        </code>
+                      </div>
+                      - Salve as alterações
+                      <br>
+                      // OBS: Esses são os links de acesso ao sistema
+                    </li>
+                  </ol>
+                </div>
+              </section>
+              <section id="execution" class="mb-5">
+                <h2 class="h2"># Execução</h2>
+                Após a instalação, dentro do diretório do hub, execute 
+                <div class="code-container pt-4 mb-5">
+                  <code class="code">docker-compose up</code>
+                </div>
+              </section>
+              <section id="new-client" class="mb-5 border-none">
+                <h2 class="h2"># Inserindo um novo Cliente</h2>
+                <div id="content-new-client" class="mb-5">
+                  só Deus sabe como
+                </div>
+              </section>
+            </section>
+            <section id="utils">
+              <h2 class="h2"># COMANDOS ÚTEIS</h2>
+              <div id="content-utils" class="mb-5">
+                comming soon...
+              </div>
+            </section>
+            <section id="technologies">
+              <h2 class="h2"># COMANDOS ÚTEIS</h2>
+              <div id="content-technologies" class="mb-5">
+                comming soon...
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -1,0 +1,8 @@
+:root {
+  --primary-color: var(--pap-primary-color) !important;
+  --body-color: var(--pap-body-color) !important;
+}
+
+.title {
+  margin-top: 100px !important;
+}

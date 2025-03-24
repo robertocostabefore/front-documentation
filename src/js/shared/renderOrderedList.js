@@ -1,4 +1,4 @@
-function renderGoals({ description, goals, containerId }) {
+function renderOrderedList({ description, goals, containerId }) {
   const content = document.getElementById(containerId);
 
   // Adiciona uma descrição principal
@@ -45,5 +45,5 @@ function renderGoals({ description, goals, containerId }) {
 }
 
 export {
-  renderGoals
+  renderOrderedList
 }

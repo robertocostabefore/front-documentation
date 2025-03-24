@@ -42,13 +42,18 @@ const navbarOptionsByView = {
         class: "nav-link"
       },
       {
-        title: "Sobre nós",
+        title: "Sobre",
         href: "#about",
         class: "nav-link"
       },
       {
-        title: "Empresa",
-        href: "#enterprise",
+        title: "Metas",
+        href: "#goals",
+        class: "nav-link"
+      },
+      {
+        title: "Get Started",
+        href: "#get-started",
         class: "nav-link"
       },
       {
@@ -67,21 +72,6 @@ const navbarOptionsByView = {
     class: "pap-header",
     img: "assets/images/pap-small-white-logo.svg",
     options: [
-      {
-        title: "Acordos",
-        href: "#agreements",
-        class: "nav-link"
-      },
-      {
-        title: "Sobre nós",
-        href: "#about",
-        class: "nav-link"
-      },
-      {
-        title: "Empresa",
-        href: "#enterprise",
-        class: "nav-link"
-      },
       {
         title: "DOC HUB",
         href: "hub.html",
