@@ -1,7 +1,8 @@
 @import url('navbar.css');
 
 :root {
-  --bs-body-bg: #180B05 !important;
+  --primary-color: var(--documentation-primary-color) !important;
+  --body-color: var(--documentation-body-color) !important;
 }
 
 .documentation {
@@ -42,7 +43,7 @@ img {
   height: 200px !important;
 
   .title {
-    margin: 0px;
+    margin: 0px !important;
     font-size: 20px;
     margin-bottom: 8px;
   }
