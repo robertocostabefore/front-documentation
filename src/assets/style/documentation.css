@@ -25,26 +25,66 @@ img {
 }
 
 .container-cards {
-  margin-top: 32px;
+  margin-top: 60px;
   display: flex !important;
   flex-wrap: wrap !important;
   justify-content: center;
-  gap: 16px;
+  gap: 60px 16px;
 }
 
 .card {
   display: flex !important;
-  border: 1px solid !important;
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
   justify-content: center;
-  background-color: var(--primary-color) !important;
-  padding: 32px;
+  background-color: var(--body-color) !important;
+  padding: 60px 32px 32px;
   width: calc(25% - 16px) !important;
   min-width: 250px !important;
   height: 200px !important;
+  position: relative;
+
+  img {
+    width: 96px;
+    position: absolute;
+    top: -48px;
+    left: calc(50% - 44px);
+    background: var(--body-color);
+  }
 
   .title {
     margin: 0px !important;
     font-size: 20px;
     margin-bottom: 8px;
+  }
+}
+
+.container-people {
+  margin-top: 32px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  gap: 16px 16px;
+}
+
+.person {
+  width: calc(15% - 16px) !important;
+  min-width: 150px !important;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.nick-name {
+  opacity: 0;
+}
+
+.person:hover {
+  .nick-name {
+    opacity: 1;
   }
 }

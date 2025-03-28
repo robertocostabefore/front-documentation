@@ -14,8 +14,9 @@
 
   /* sobreescrita de variaveis do bootstrap */
   --bs-body-bg: var(--body-color) !important;
-  --bs-heading-color: #FFF !important;
-  --bs-body-color: #FFF !important;
+  --bs-heading-color: var(--primary-color) !important;
+  --bs-body-color: var(--primary-color) !important;
+  --bs-border-color: var(--primary-color) !important;
 }
 
 ::-webkit-scrollbar {
@@ -67,7 +68,7 @@ body {
   gap: 8px !important;
 }
 
-section {
+section:not(:last-child) {
   border-bottom: 2px solid;
   margin-bottom: 3rem;
 }
