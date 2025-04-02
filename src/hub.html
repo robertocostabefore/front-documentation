@@ -17,86 +17,7 @@
           Documentação do Projeto HUB de vendas
         </h1>
         <div class="row justify-content-md-center">
-          <div class="col col-sm-0 col-md-0 col-lg-3 col-xl-3">
-            <aside class="bd-sidebar">
-              <div class="offcanvas-lg offcanvas-start">
-                <div class="offcanvas-body">
-                  <nav class="bd-links w-100" id="bd-docs-nav">
-                    <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
-                      <li class="bd-links-group py-2">
-                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-bold">
-                          HUB
-                        </strong>
-                        <ul class="list-unstyled fw-semibold pb-2">
-                          <li>
-                            <a href="#agreements" class="bd-links-link">
-                              # Acordos
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#about" class="bd-links-link">
-                              # Sobre
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#goals" class="bd-links-link">
-                              # metas
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="bd-links-group py-2">
-                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-bold">
-                          GET STARTED
-                        </strong>
-                        <ul class="list-unstyled fw-semibold pb-2">
-                          <li>
-                            <a href="#instalation" class="bd-links-link">
-                              # Instalação
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#execution" class="bd-links-link">
-                              # Execução
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#new-client" class="bd-links-link">
-                              # Novo Cliente
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="bd-links-group py-2">
-                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-bold">
-                          COMANDOS ÚTEIS
-                        </strong>
-                        <ul class="list-unstyled fw-semibold pb-2">
-                          <li>
-                            <a href="#utils" class="bd-links-link">
-                              comming soon...
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="bd-links-group py-2">
-                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-bold">
-                          TECNOLOGIAS
-                        </strong>
-                        <ul class="list-unstyled fw-semibold pb-2">
-                          <li>
-                            <a href="#technologies" class="bd-links-link">
-                              comming soon...
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div> 
-            </aside>
-          </div>
+          <div class="col col-sm-0 col-md-0 col-lg-3 col-xl-3" id="aside"></div>
           <div class="col col-sm-12 col-md-12 col-lg-9 col-xl-9">
             <section id="agreements">
               <h2 class="h2"># Acordos</h2>
@@ -195,6 +116,22 @@
               <h2 class="h2"># TECNOLOGIAS</h2>
               <div id="content-technologies" class="mb-5">
                 comming soon...
+              </div>
+            </section>
+            <section id="errors">
+              <h2 class="h2"># ERROS</h2>
+              <div id="white-screen" class="mb-5">
+                <h5 class="h5">Tela branca sem aparecer nada</h5>
+                <ol class="list-group list-group-numbered fw-normal pb-2">
+                  <li class="list-group-item">
+                    A aba aplication está com um cache absurdo
+                    <p> - As vezes a aplicação fica com o cache bugado no local, ainda n sabemos o motivo</p>
+                  </li>
+                  <li class="list-group-item">
+                    Provedor não configurado corretamente
+                    <p> - Se for um provedor novo, ou o seeder bugou, pode haver algum erro no retorno da request <code>whoami</code></p>
+                  </li>
+                </ol>
               </div>
             </section>
           </div>

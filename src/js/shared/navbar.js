@@ -101,7 +101,7 @@ const populateNavbar = (view) => {
   if (!navbarNav || !navbarTitle) {
     setTimeout(() => {
       populateNavbar(view)
-    }, 1000);
+    }, 50);
     return
   }
 
