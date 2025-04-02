@@ -70,7 +70,7 @@ body {
 
 section:not(:last-child) {
   border-bottom: 2px solid;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem !important;
 }
 
 .border-none {
