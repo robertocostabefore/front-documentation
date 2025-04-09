@@ -81,6 +81,8 @@ section:not(:last-child) {
   position: sticky;
   top: 72px;
   border-right: solid 1px !important;
+  min-height: calc(100dvh - 80px);
+  overflow: scroll;
 }
 
 .bd-links-heading {
