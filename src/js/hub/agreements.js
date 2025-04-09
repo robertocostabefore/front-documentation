@@ -8,5 +8,25 @@ export default {
         "Sempre tentar melhorar como as lógicas são feitas"
       ]
     },
+    {
+      title: "MANTER O CARD ATUALIZADO",
+      descriptions: [
+        "Manter o card atualizado com a master e com o épico"
+      ]
+    },
+    {
+      title: "",
+      descriptions: [
+        ""
+      ]
+    },
   ]
 }
+
+// regras de css
+
+// regras de lint
+
+// regras de nomenclatura
+
+
