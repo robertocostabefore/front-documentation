@@ -5,7 +5,6 @@ const asideOptionsByView = {
     options: [
       {
         title: "# ACORDOS",
-        ulClass: "list-unstyled fw-semibold pb-2",
         options: [
           {
             title: "# Acordos",
@@ -14,29 +13,27 @@ const asideOptionsByView = {
         ]
       },
       {
-        title: "# SOBRE",
-        ulClass: "list-unstyled fw-semibold pb-2",
+        title: "# SOBRE O FRONT",
         options: [
           {
-            title: "# Sobre",
+            title: "# Quem somos",
             href: "#about"
           }
         ]
       },
       {
         title: "SOBRE A EMPRESA",
-        ulClass: "list-unstyled fw-semibold pb-2",
         options: [
           {
             title: "# Quem somos",
             href: "#who-are-we"
           },
           {
-            title: "# Nosso propósito",
+            title: "# Propósitos",
             href: "#purpose"
           },
           {
-            title: "# Nossos valores",
+            title: "# Valores",
             href: "#our-values"
           },
           {
@@ -51,7 +48,6 @@ const asideOptionsByView = {
     options: [
       {
         title: "ACORDOS",
-        ulClass: "list-unstyled fw-semibold pb-2",
         options: [
           {
             title: "# Acordos",
@@ -69,7 +65,6 @@ const asideOptionsByView = {
       },
       {
         title: "GET STARTED",
-        ulClass: "list-unstyled fw-semibold pb-2",
         options: [
           {
             title: "# Instalação",
@@ -87,7 +82,6 @@ const asideOptionsByView = {
       },
       {
         title: "COMANDOS ÚTEIS",
-        ulClass: "list-unstyled fw-semibold pb-2",
         options: [
           {
             title: "comming soon...",
@@ -97,7 +91,6 @@ const asideOptionsByView = {
       },
       {
         title: "TECNOLOGIAS",
-        ulClass: "list-unstyled fw-semibold pb-2",
         options: [
           {
             title: "comming soon...",
@@ -107,7 +100,6 @@ const asideOptionsByView = {
       },
       {
         title: "ERROS",
-        ulClass: "list-unstyled fw-semibold pb-2",
         options: [
           {
             title: "Tela branca",
@@ -121,7 +113,6 @@ const asideOptionsByView = {
     options: [
       {
         title: "",
-        ulClass: "list-unstyled fw-semibold pb-2",
         options: [
           {
             title: "",
@@ -146,13 +137,13 @@ const createItemLink = ({ href, title }) => {
   const itemLink = document.createElement("a")
   itemLink.href = href
   itemLink.textContent = title
-  itemLink.className = "bd-links-link"
 
   return itemLink
 }
 
 const createListItem = option => {
   const item = document.createElement("li")
+  item.className = "bd-links-link"
 
   const itemContent = createItemLink(option)
 
@@ -161,9 +152,9 @@ const createListItem = option => {
   return item
 }
 
-const createList = ({ ulClass, options }) => {
+const createList = ({ options }) => {
   const itemList = document.createElement("ul")
-  itemList.className = ulClass
+  itemList.className = "list-unstyled fw-semibold pb-2 no-gap"
 
   options.forEach(option => {
     const item = createListItem(option)

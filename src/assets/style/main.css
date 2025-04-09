@@ -90,16 +90,24 @@ section:not(:last-child) {
 }
 
 .bd-links-link {
-  color: var(--bs-body-color);
-  text-decoration: none;
-  padding: 4px 8px;
   border-radius: var(--bs-border-radius);
-  margin: 8px 0px;
-  font-size: 18px !important;
+  padding: 8px;
+
+  a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    font-size: 14px !important;
+    margin: 8px 0px;
+  }
 
   &:hover {
     background-color: var(--primary-color);
-    color: white;
+    padding: 8px 4px 8px 12px;
+
+    a {
+      color: white;
+      font-size: 16px !important;
+    }
   }
 }
 
@@ -127,4 +135,8 @@ pre {
 
 pre code {
   display: block !important;
+}
+
+.no-gap {
+  gap: 0px !important;
 }
