@@ -5,9 +5,9 @@
   --documentation-primary-color: #F86E32;
   --documentation-body-color: #140c08;
   --hub-primary-color: #0937D6;
-  --hub-body-color: #030E33;
+  --hub-body-color: #01040f;
   --pap-primary-color: #660099;
-  --pap-body-color: #200030;
+  --pap-body-color: #0b0011;
 
   --primary-color: var(--documentation-primary-color) !important;
   --body-color: var(--documentation-body-color) !important;
