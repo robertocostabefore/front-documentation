@@ -1,85 +1,108 @@
 export default {
-  description: "METAS e OBJETIVOS para melhorarmos como um time e termos melhores entregas",
+  description: "METAS e OBJETIVOS para sermos um time com entregas consistentes e cooperativo",
   goals2025: [
     {
-      title: "MANTER A DOC ATUALIZADA",
-      descriptions: []
-    },
-    {
-      title: "Melhorarmos no quesito estimativa",
+      title: "MANTER A DOCUMENTAÇÃO ATUALIZADA",
       descriptions: [
-        "Estimativas mais precisas e acertivas",
-        "Cumprir as estimativas de tempo"
+        "Este documento deve ser mantido e atualizado sempre.",
       ]
     },
     {
-      title: "Diminuir retrabalho",
+      title: "ESTIMAR DE FORMA PRECISA",
       descriptions: [
-        "Fazer bem feito",
-        "Cuidados com UI e UX",
-        "Prestar atenção nas documentações dos cards para evitar erros de regra de negócio"
+        "Ter um bom enbasamento do que será ser feito para estimar de forma precisa e acertiva.",
+      ],
+      readMore: [
+        "Acertar uma estimativa é sempre um desafio, mas precisamos nos atentar e sempre darmos nosso melhor no hora de avaliar um card! Então sempre devemos:",
+        "Ler atentamento o escopo do card.",
+        "Analisar no sistema como é o fluxo atualmente (caso seja um card de mudança de fluxo).",
+        "Analisar atentamente como é o fluxo proposto.",
+        "Entender quais requisições precisarão ser feitas (solicitar novas, caso necessário).",
+        "Analisar quais componentes precisarão ser refatorados (caso necessário)."
       ]
     },
     {
-      title: "Testar mais",
+      title: "UM CARD UMA RESPONSABILIDADE",
       descriptions: [
-        "Testar bastante no local",
-        "Testar em BETA -> vide doc do projeto",
-        "Dar uma olhada no plano de teste e usá-lo",
-        "Testar o código não somente no fluxo feliz",
-        "Fingir ser um retard*** (vulgo cliente) e tentar quebrar mesmo, se tu ve um botão de voltar, clica nele poura"
+        "Ao iniciar o desenvolvimento de um card, somo os responsáveis por ele.",
+        "Cumprir a estimativa de tempo, entregar funcional, propor melhorias são nossas RESPONSABILIDADES, é o MÍNIMO esperado.",
+        "Qualquer imprevisto que possa afetar a estimativa inicial deve ser avisado o quanto antes."
       ]
     },
     {
-      title: "Documentar nos cards",
+      title: "DIMINUIR RETRABALHO",
       descriptions: [
-        "Documentar no card os combinados feitos em chat/meet",
-        "E também mudanças de escopo",
-        "Fazer bonitinho o acordo com o back",
-        "Documentar no card o acordo realizado, escrever em um comentário como ficou a requisição",
-        "Colocar o nome do endpoint e o resultado esperado"
+        "Se atentar aos testes e sempre garantir que o fluxo está funcional.",
+        "Garantir que o escopo foi atendido.",
+        "Se imaginar como o usuário, testar a aplicação como se realmente estivesse usando ela.",
+        "Cuidados com UI e UX."
+      ],
+      readMore: [
+        "O mínimo esperado é que o fluxo principal esteja funcional, pois o QA tem tempo para testar e NÃO podemos consumir o tempo de teste para terminar o desenvolvimento.",
+        "Prestar atenção nas documentações do card para evitar erros de regra de negócio, e garantir que a entrega está consistente.",
+        "UI e UX dizem respeito a usabilidade e experiência do usuário, precisamos garantir que a entrega esteja simples, funcional e que a experiência do usuário seja satisfatória.",
       ]
     },
     {
-      title: "Sempre comunicar",
+      title: "GARANTIR A USABILIDADE",
       descriptions: [
-        "Avisar o quanto antes quando houver problemas",
-        "Aviser sobre cenários que poderiam atrasar o desenvolvimento",
-        "Sempre pedir ajudar, não tentar engolir tudo sozinho"
+        "Cuidados com a experiência do usuário são excenssiais. Para garantir um sistema coeso e interessante o principal é:",
+        "Garantir a responsividade.",
+        "Telas em branco não fazem sentido, por isso, sempre adicione loadings ou toasts que avisem o que está acontecendo.",
+        "Textos simples e objetivos.",
+        "Integridade do sistema! Garantir que um botão ou ação funcione sempre, e mesmo que quebre não deixe o usuário sem resposta."
+      ],
+    },
+    {
+      title: "TESTAR AS ENTREGAS",
+      descriptions: [
+        "Testar bastante no local.",
+        "Testar em BETA -> vide doc do projeto -> mas avisar caso vá testar nesse ambiente.",
+        "Dar uma olhada no plano de teste e usá-lo.",
+        "Testar o código não somente no fluxo feliz, ou seja:",
+        "Se imaginar sendo o próprio usuário, tentar quebrar mesmo, clicar nos botões, preencher erroneamente os campos, etc."
       ]
     },
     {
-      title: "Ler os cards e entender os escopos",
+      title: "DOCUMENTAR NOS CARDS",
       descriptions: [
-        "Ler sempre muito bem os cards e entendê-los",
-        "Entender o fluxo e participar da apresentação",
-        "Fazer checklist dos afazeres ou até separar em cards menores (NÃO ENGOLIR O ELEFANTE)",
-        "Começar devagar, ir por partes igual o jackstripador"
+        "Documentar dentro do card as mudanças de escopo os combinados feitos em chat/meet.",
+        "Documentar no card o acordo realizado entre back e front, escrever em um comentário como ficou a requisição e sua resposta.",
       ]
     },
     {
-      title: "Propor melhorias",
+      title: "SEMPRE COMUNICAR",
       descriptions: [
-        "Entendendo os fluxos propor melhorias",
-        "Propor melhorias de usabilidade e etc"
+        "Avisar o quanto antes quando houver problemas!",
+        "Avisar sobre cenários que poderiam atrasar o desenvolvimento!",
+        "Sempre pedir ajudar, não tentar fazer tudo sozinho!"
       ]
     },
     {
-      title: "Não vir bêbado/chapado (pelo menos n muito) pro trabalho",
+      title: "LER OS CARDS E ENTENDER AS DEMANDAS",
       descriptions: [
-        "Só no sextou depois dos afazeres",
-        "Se vier, não nos deixe perceber"
+        "Ler sempre muito bem os cards e entendê-los.",
+        "Entender o fluxo e participar da apresentação.",
+        "Fazer checklist dos afazeres ou até separar em cards menores.",
+        "Começar devagar, ir por partes (separar para conquistar)."
       ]
     },
     {
-      title: "Cuidado com os horários",
+      title: "PROPOR MELHORIAS",
       descriptions: [
-        "Se atentar aos horários e não atrasar nas apresentações e dailys",
-        "E se possível abrir a câmera para todos te verem"
+        "Entendendo os fluxos propor melhorias.",
+        "Propor melhorias de usabilidade e etc."
       ]
     },
     {
-      title: "Modularizar e reutilizar",
+      title: "CUIDADO COM OS HORÁRIOS",
+      descriptions: [
+        "Se atentar aos horários e não atrasar nas apresentações, dailys e retrospectivas.",
+        "Caso vá atrasar, avisar o quanto antes!"
+      ]
+    },
+    {
+      title: "MODULARIZAR E REUTILIZAR",
       descriptions: [
         "Modularizar componentes e reutilizar",
         "Usar utils/helpers/mixins para reutilizar funções e códigos que repetiriam"

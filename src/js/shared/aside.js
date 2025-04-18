@@ -16,8 +16,8 @@ const asideOptionsByView = {
         title: "# SOBRE O FRONT",
         options: [
           {
-            title: "# Quem somos",
-            href: "#about"
+            title: "# Integrantes",
+            href: "#members"
           }
         ]
       },
@@ -27,6 +27,14 @@ const asideOptionsByView = {
           {
             title: "# Quem somos",
             href: "#who-are-we"
+          },
+          {
+            title: "# Missão",
+            href: "#mission"
+          },
+          {
+            title: "# Visão",
+            href: "#vision"
           },
           {
             title: "# Propósitos",

@@ -1,49 +1,95 @@
+const arrowDownIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-down-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z'/></svg>"
+const arrowUpIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-up-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z'/></svg>"
+
 function renderOrderedList({ description, goals, containerId }) {
-  const content = document.getElementById(containerId);
+  const container = document.getElementById(containerId);
+  if (!container) return;
 
-  // Adiciona uma descrição principal
-  const titleDiv = document.createElement("div");
-  titleDiv.className = "title mb-3 mt-3 fw-bold";
-  titleDiv.textContent = description;
-  content.appendChild(titleDiv);
+  const title = createTitle(description)
+  const list = createList(goals)
 
-  // Cria a lista ordenada com as classes do Bootstrap
-  const goalsList = document.createElement("ol");
-  goalsList.className = "list-group list-group-numbered mb-3";
+  container.appendChild(title);
+  container.appendChild(list);
+}
 
-  goals.forEach((goal) => {
-    // Cria o item da lista com as classes Bootstrap
-    const goalItem = document.createElement("li");
-    goalItem.className = "list-group-item d-flex justify-content-between align-items-start";
+function createTitle(text) {
+  const title = document.createElement("div");
+  title.className = "title mb-3 mt-3 fw-bold";
+  title.textContent = text;
+  return title;
+}
 
-    // Cria a div para o conteúdo do item
-    const goalContent = document.createElement("div");
-    goalContent.className = "ms-2 me-auto";
+function createList(goals) {
+  const list = document.createElement("ol");
+  list.className = "list-group list-group-numbered mb-3";
 
-    // Cria o título do objetivo
-    const goalTitle = document.createElement("div");
-    goalTitle.className = "fw-bold";
-    goalTitle.textContent = goal.title;
-
-    // Cria uma lista para as descrições
-    const descriptionsList = document.createElement("ul");
-    descriptionsList.className = "mb-0";
-    goal.descriptions.forEach((description) => {
-      const descriptionItem = document.createElement("li");
-      descriptionItem.textContent = description;
-      descriptionsList.appendChild(descriptionItem);
-    });
-
-    // Monta a estrutura
-    goalContent.appendChild(goalTitle);
-    goalContent.appendChild(descriptionsList);
-    goalItem.appendChild(goalContent);
-    goalsList.appendChild(goalItem);
+  goals.forEach((goal, index) => {
+    list.appendChild(createGoalItem(goal, index));
   });
 
-  content.appendChild(goalsList);
+  return list;
 }
 
-export {
-  renderOrderedList
+function createGoalItem(goal, index) {
+  const item = document.createElement("li");
+  item.className = "list-group-item d-flex justify-content-between align-items-start flex-wrap";
+
+  const content = document.createElement("div");
+  content.className = "table-content";
+
+  const title = document.createElement("div");
+  title.className = "fw-bold mb-1";
+  title.textContent = goal.title;
+
+  const descriptions = createDescriptionsList(goal.descriptions);
+  content.appendChild(title);
+  content.appendChild(descriptions);
+
+  item.appendChild(content);
+
+  if (goal.readMore && goal.readMore.length > 0) {
+    const collapseId = `readMore-${index}`;
+
+    const toggleButton = document.createElement("button");
+    toggleButton.className = "btn btn-outline mt-2 table-button-colapse-extra-content";
+    toggleButton.setAttribute("data-bs-toggle", "collapse");
+    toggleButton.setAttribute("data-bs-target", `#${collapseId}`);
+    toggleButton.setAttribute("aria-expanded", "false");
+    toggleButton.setAttribute("aria-controls", collapseId);
+    toggleButton.innerHTML = arrowDownIcon;
+
+    const collapseDiv = document.createElement("div");
+    collapseDiv.className = "collapse mt-2 mx-auto table-content";
+    collapseDiv.id = collapseId;
+
+    const readMoreList = createDescriptionsList(goal.readMore);
+    collapseDiv.appendChild(readMoreList);
+
+    collapseDiv.addEventListener("shown.bs.collapse", () => {
+      toggleButton.innerHTML = arrowUpIcon;
+    });
+
+    collapseDiv.addEventListener("hidden.bs.collapse", () => {
+      toggleButton.innerHTML = arrowDownIcon;
+    });
+
+    item.appendChild(toggleButton);
+    item.appendChild(collapseDiv);
+  }
+
+  return item;
 }
+function createDescriptionsList(descriptions) {
+  const list = document.createElement("ul");
+  list.className = "mb-0";
+
+  descriptions.forEach((text) => {
+    const item = document.createElement("li");
+    item.textContent = text;
+    list.appendChild(item);
+  });
+
+  return list;
+}
+
+export { renderOrderedList };

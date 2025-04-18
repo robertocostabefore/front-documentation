@@ -140,3 +140,39 @@ pre code {
 .no-gap {
   gap: 0px !important;
 }
+
+@media (max-width: 768px) {
+  .col-sm-0 {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-0 {
+    display: none;
+  }
+}
+
+.btn-outline {
+  --bs-btn-color: var(--primary-color) !important;
+  --bs-btn-border-color: var(--primary-color) !important;
+  --bs-btn-hover-bg: var(--primary-color) !important;
+  --bs-btn-hover-color: white !important;
+  --bs-btn-hover-border-color: var(--primary-color) !important;
+  --bs-btn-active-bg: var(--primary-color) !important;
+  --bs-btn-active-border-color: var(--primary-color) !important;
+  --bs-btn-disabled-color: var(--primary-color) !important;
+  --bs-btn-disabled-border-color: var(--primary-color) !important;
+}
+
+.list-group-item::before,
+.table-button-colapse-extra-content {
+  width: 40px;
+}
+.table-button-colapse-extra-content  {
+  padding: 6px 0 !important;
+}
+
+.table-content {
+  width: calc(100% - 40px);
+}
