@@ -47,13 +47,7 @@ body {
   }
 }
 
-#agreements,
-#about,
-#goals,
-#get-started,
-#instalation,
-#execution,
-#new-client {
+section {
   scroll-margin-top: 100px;
 }
 

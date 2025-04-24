@@ -1,5 +1,5 @@
 export default {
-  description: "Boas práticas do time do HUB",
+  description: "Boas práticas do time do PaP",
   goodPractices: [
     {
       title: "PADRÃO DA PR",
@@ -17,6 +17,15 @@ export default {
         "entender <code>if (foo == PI)</code>",
         "é bem mais fácil que entender <code>if (foo == 3.14159265359)</code>",
         "Então sempre deve-se criar consts para facilitar tanto a leitura e entendimento quanto a reutilização"
+      ]
+    },
+    {
+      title: "NUNCA USAR CAMINHO RELATIVO",
+      descriptions: [
+        "Temos uma lista bem grandinha de alias. E sempre devemos utilizá-los para termos o caminho absoluto.",
+        "BAD EX: ../../../../foo/bar/View.vue",
+        "GREAT EX: @foo/bar/View.vue",
+        "Acesse o arquivo aliases.config.js para ver a lista completa dos nossos aliases."
       ]
     },
   ]

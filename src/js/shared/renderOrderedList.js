@@ -85,7 +85,7 @@ function createDescriptionsList(descriptions) {
 
   descriptions.forEach((text) => {
     const item = document.createElement("li");
-    item.textContent = text;
+    item.innerHTML = text;
     list.appendChild(item);
   });
 

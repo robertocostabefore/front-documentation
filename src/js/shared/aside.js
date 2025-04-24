@@ -4,11 +4,15 @@ const asideOptionsByView = {
   documentation: {
     options: [
       {
-        title: "# ACORDOS",
+        title: "# TIME",
         options: [
           {
             title: "# Acordos",
             href: "#agreements"
+          },
+          {
+            title: "# Boas Práticas",
+            href: "#good-practices"
           }
         ]
       },
@@ -25,7 +29,7 @@ const asideOptionsByView = {
         title: "SOBRE A EMPRESA",
         options: [
           {
-            title: "# Quem somos",
+            title: "# Quem somos?",
             href: "#who-are-we"
           },
           {
@@ -55,18 +59,22 @@ const asideOptionsByView = {
   hub: {
     options: [
       {
-        title: "ACORDOS",
+        title: "HUB",
         options: [
-          {
-            title: "# Acordos",
-            href: "#agreements"
-          },
           {
             title: "# Sobre",
             href: "#about"
           },
           {
-            title: "# metas",
+            title: "# Acordos",
+            href: "#agreements"
+          },
+          {
+            title: "# Boas Práticas",
+            href: "#good-practices"
+          },
+          {
+            title: "# Metas",
             href: "#goals"
           }
         ]
@@ -120,11 +128,19 @@ const asideOptionsByView = {
   pap: {
     options: [
       {
-        title: "",
+        title: "PaP",
         options: [
           {
-            title: "",
-            href: ""
+            title: "# Sobre",
+            href: "#about"
+          },
+          {
+            title: "# Acordos",
+            href: "#agreements"
+          },
+          {
+            title: "# Boas Práticas",
+            href: "#good-practices"
           }
         ]
       }
