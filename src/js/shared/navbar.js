@@ -21,12 +21,12 @@ const navbarOptionsByView = {
         class: "nav-link"
       },
       {
-        title: "DOC HUB",
+        title: "Doc Hub",
         href: "hub.html",
         class: "nav-link hub"
       },
       {
-        title: "DOC PAP",
+        title: "Doc PAP",
         href: "pap.html",
         class: "nav-link pap"
       },
@@ -57,12 +57,12 @@ const navbarOptionsByView = {
         class: "nav-link"
       },
       {
-        title: "DOC PAP",
+        title: "Doc PAP",
         href: "pap.html",
         class: "nav-link pap"
       },
       {
-        title: "DOC FRONT",
+        title: "Doc Front",
         href: "documentation.html",
         class: "nav-link front"
       },
@@ -83,12 +83,12 @@ const navbarOptionsByView = {
         class: "nav-link"
       },
       {
-        title: "DOC HUB",
+        title: "Doc Hub",
         href: "hub.html",
         class: "nav-link hub"
       },
       {
-        title: "DOC FRONT",
+        title: "Doc Front",
         href: "documentation.html",
         class: "nav-link front"
       },
