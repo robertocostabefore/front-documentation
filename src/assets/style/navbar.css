@@ -2,6 +2,7 @@
   font-family: sans-serif;
   padding: 0px !important;
   background-color: var(--primary-color) !important;
+  font-weight: 700;
   position: fixed !important;
   top: 0px;
   width: 100%;
