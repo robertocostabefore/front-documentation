@@ -21,12 +21,12 @@ const navbarOptionsByView = {
         class: "nav-link"
       },
       {
-        title: "DOC HUB",
+        title: "Doc Hub",
         href: "hub.html",
         class: "nav-link hub"
       },
       {
-        title: "DOC PAP",
+        title: "Doc PAP",
         href: "pap.html",
         class: "nav-link pap"
       },
@@ -57,12 +57,12 @@ const navbarOptionsByView = {
         class: "nav-link"
       },
       {
-        title: "DOC PAP",
+        title: "Doc PAP",
         href: "pap.html",
         class: "nav-link pap"
       },
       {
-        title: "DOC FRONT",
+        title: "Doc Front",
         href: "documentation.html",
         class: "nav-link front"
       },
@@ -73,12 +73,22 @@ const navbarOptionsByView = {
     img: "assets/images/pap-small-white-logo.svg",
     options: [
       {
-        title: "DOC HUB",
+        title: "Acordos",
+        href: "#agreements",
+        class: "nav-link"
+      },
+      {
+        title: "Sobre",
+        href: "#about",
+        class: "nav-link"
+      },
+      {
+        title: "Doc Hub",
         href: "hub.html",
         class: "nav-link hub"
       },
       {
-        title: "DOC FRONT",
+        title: "Doc Front",
         href: "documentation.html",
         class: "nav-link front"
       },

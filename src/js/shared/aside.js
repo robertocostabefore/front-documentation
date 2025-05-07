@@ -143,7 +143,29 @@ const asideOptionsByView = {
             href: "#good-practices"
           }
         ]
-      }
+      },
+      {
+        title: "ARQUITETURA",
+        options: [
+          {
+            title: "Comandos SQL a serem executados",
+            href: "#architecture"
+          }
+        ]
+      },
+      {
+        title: "ERROS",
+        options: [
+          {
+            title: "Verificação de erros container sun",
+            href: "#errors"
+          },
+          {
+            title: "Verificação de erros container sun-core",
+            href: "#errors"
+          }
+        ]
+      },
     ]
   },
 }
