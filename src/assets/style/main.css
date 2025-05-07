@@ -8,14 +8,15 @@
   --hub-body-color: #01040f;
   --pap-primary-color: #660099;
   --pap-body-color: #0b0011;
+  --text-default-color: #FFF;
 
   --primary-color: var(--documentation-primary-color) !important;
   --body-color: var(--documentation-body-color) !important;
 
   /* sobreescrita de variaveis do bootstrap */
   --bs-body-bg: var(--body-color) !important;
-  --bs-heading-color: var(--primary-color) !important;
-  --bs-body-color: var(--primary-color) !important;
+  --bs-heading-color: var(--text-default-color) !important;
+  --bs-body-color: var(--text-default-color) !important;
   --bs-border-color: var(--primary-color) !important;
 }
 
@@ -65,6 +66,11 @@ section {
 section:not(:last-child) {
   border-bottom: 2px solid;
   margin-bottom: 6rem !important;
+  color: var(--primary-color);
+}
+
+section:not(:last-child) * {
+  color: var(--text-default-color);
 }
 
 .border-none {

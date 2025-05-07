@@ -73,6 +73,16 @@ const navbarOptionsByView = {
     img: "assets/images/pap-small-white-logo.svg",
     options: [
       {
+        title: "Acordos",
+        href: "#agreements",
+        class: "nav-link"
+      },
+      {
+        title: "Sobre",
+        href: "#about",
+        class: "nav-link"
+      },
+      {
         title: "DOC HUB",
         href: "hub.html",
         class: "nav-link hub"
