@@ -70,36 +70,30 @@
   width: 40px;
   height: 26px;
   border-radius: 8px;
-  transition: all 1s linear;
-}
-
-#btn-change-scheme:hover {
-  transform: scale(1.1);
+  position: relative;
+  overflow: hidden;
+  transition: all .2s ease;
 }
 
 #btn-change-scheme::before {
-  display: block;
-  width: 20px;
-  height: 20px;
+  content: '☀️';
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  transition: transform 0.4s ease .1s, left 0.4s ease .1s;
+  font-size: 18px;
 }
 
-
-.dark-side {
-  #btn-change-scheme::before {
-    content: '🌙';
-    position: relative;
-    left: -4px;
-    top: -2px;
-  }
+.light-mode #btn-change-scheme::before {
+  content: '☀️';
+  transform: translateX(12px);
 }
 
-.light-mode {
-  #btn-change-scheme::before {
-    content: '☀️';
-    position: relative;
-    right: -12px;
-    top: -1px;
-  }
+.dark-side #btn-change-scheme::before {
+  content: '🌙';
+  transform: translateX(0);
+  font-size: 16px;
+  top: 2px;
 }
 
 @media (max-width: 991px) {
