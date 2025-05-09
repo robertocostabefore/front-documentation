@@ -1,3 +1,5 @@
+import { changeBodyColorScheme, setBodyToLightMode } from "./changeColorScheme.js"
+
 const navbarHtmlElement = document.getElementById('navbar')
 
 const navbarOptionsByView = {
@@ -105,6 +107,29 @@ const fetchNavbarComponent = () => {
     .catch(error => console.error('Erro ao carregar navbar:', error));
 }
 
+const createNavbarOptionsList = view => {
+  const itemsList = document.createElement("ul");
+  itemsList.className = "navbar-nav";
+
+  navbarOptionsByView[view]?.options.forEach((option) => {
+    // Cria o item da lista
+    const item = document.createElement("li");
+    item.className = "nav-item";
+
+    // Cria o link dentro do item
+    const itemContent = document.createElement("a");
+    itemContent.className = option.class;
+    itemContent.href = option.href;
+    itemContent.textContent = option.title;
+
+    // Monta a estrutura
+    item.appendChild(itemContent);
+    itemsList.appendChild(item);
+  });
+
+  return itemsList
+}
+
 const populateNavbar = (view) => {
   const navbarNav = document.getElementById("navbar-items");
   const navbarTitle = document.getElementById("navbar-title");
@@ -126,26 +151,14 @@ const populateNavbar = (view) => {
   navbarNav.innerHTML = "";
 
   // Cria a lista principal
-  const itemsList = document.createElement("ul");
-  itemsList.className = "navbar-nav";
+  const itemsList = createNavbarOptionsList(view)
 
-  navbarOptionsByView[view]?.options.forEach((option) => {
-    // Cria o item da lista
-    const item = document.createElement("li");
-    item.className = "nav-item";
-
-    // Cria o link dentro do item
-    const itemContent = document.createElement("a");
-    itemContent.className = option.class;
-    itemContent.href = option.href;
-    itemContent.textContent = option.title;
-
-    // Monta a estrutura
-    item.appendChild(itemContent);
-    itemsList.appendChild(item);
-  });
+  const buttonChangeColorScheme = document.createElement('button');
+  buttonChangeColorScheme.id = 'btn-change-scheme';
+  buttonChangeColorScheme.addEventListener('click', changeBodyColorScheme);
 
   navbarNav.appendChild(itemsList);
+  navbarNav.appendChild(buttonChangeColorScheme);
 };
 
 const handleRenderNavbar = (view) => {
@@ -153,6 +166,8 @@ const handleRenderNavbar = (view) => {
 
   populateNavbar(view)
 }
+
+setBodyToLightMode()
 
 export {
   handleRenderNavbar

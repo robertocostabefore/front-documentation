@@ -1,4 +1,16 @@
 :root {
-  --primary-color: var(--hub-primary-color) !important;
-  --body-color: var(--hub-body-color) !important;
+  --light--primary-color: var(--hub-primary-color);
+  --light--text-color: var(--hub-primary-color);
+  --light--body-color: #fff;
+
+  --dark--primary-color: var(--hub-primary-color);
+  --dark--text-color: var(--hub-primary-color);
+  --dark--body-color: #00030f;
+}
+
+body {
+  .img {
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px 0px var(--text-color);
+  }
 }

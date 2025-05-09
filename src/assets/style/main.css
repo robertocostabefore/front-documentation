@@ -1,23 +1,9 @@
 @import url('navbar.css');
 
 :root {
-  /* variáveis locais */
-  --documentation-primary-color: #F86E32;
-  --documentation-body-color: #140c08;
-  --hub-primary-color: #0937D6;
-  --hub-body-color: #01040f;
   --pap-primary-color: #660099;
-  --pap-body-color: #0b0011;
-  --text-default-color: #FFF;
-
-  --primary-color: var(--documentation-primary-color) !important;
-  --body-color: var(--documentation-body-color) !important;
-
-  /* sobreescrita de variaveis do bootstrap */
-  --bs-body-bg: var(--body-color) !important;
-  --bs-heading-color: var(--text-default-color) !important;
-  --bs-body-color: var(--text-default-color) !important;
-  --bs-border-color: var(--primary-color) !important;
+  --hub-primary-color: #0937D6;
+  --documentation-primary-color: #F86E32;
 }
 
 ::-webkit-scrollbar {
@@ -32,6 +18,30 @@ html {
 body {
   font-family: sans-serif;
   -ms-overflow-style: none !important;
+}
+
+body.light-mode {
+  --primary-color: var(--light--primary-color);
+  --text-color: var(--light--text-color);
+  --body-color: var(--light--body-color);
+
+  /* sobreescrita de variaveis do bootstrap */
+  --bs-body-bg: var(--body-color);
+  --bs-heading-color: var(--text-color);
+  --bs-body-color: var(--text-color);
+  --bs-border-color: var(--text-color);
+}
+
+body.dark-side {
+  --primary-color: var(--dark--primary-color);
+  --text-color: var(--dark--text-color);
+  --body-color: var(--dark--body-color);
+
+  /* sobreescrita de variaveis do bootstrap */
+  --bs-body-bg: var(--body-color);
+  --bs-heading-color: var(--text-color);
+  --bs-body-color: var(--text-color);
+  --bs-border-color: var(--text-color);
 }
 
 .container {
@@ -66,11 +76,6 @@ section {
 section:not(:last-child) {
   border-bottom: 2px solid;
   margin-bottom: 6rem !important;
-  color: var(--primary-color);
-}
-
-section:not(:last-child) * {
-  color: var(--text-default-color);
 }
 
 .border-none {
@@ -154,15 +159,15 @@ pre code {
 }
 
 .btn-outline {
-  --bs-btn-color: var(--primary-color) !important;
-  --bs-btn-border-color: var(--primary-color) !important;
+  --bs-btn-color: var(--text-color) !important;
+  --bs-btn-border-color: var(--text-color) !important;
   --bs-btn-hover-bg: var(--primary-color) !important;
   --bs-btn-hover-color: white !important;
   --bs-btn-hover-border-color: var(--primary-color) !important;
-  --bs-btn-active-bg: var(--primary-color) !important;
-  --bs-btn-active-border-color: var(--primary-color) !important;
-  --bs-btn-disabled-color: var(--primary-color) !important;
-  --bs-btn-disabled-border-color: var(--primary-color) !important;
+  --bs-btn-active-bg: var(--text-color) !important;
+  --bs-btn-active-border-color: var(--text-color) !important;
+  --bs-btn-disabled-color: var(--text-color) !important;
+  --bs-btn-disabled-border-color: var(--text-color) !important;
 }
 
 .list-group-item::before,
