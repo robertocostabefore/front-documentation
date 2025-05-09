@@ -1,6 +1,6 @@
 export default {
   description: "METAS e OBJETIVOS para o projeto do HUB",
-  goals2025: [
+  listItems: [
     {
       title: "REFATORAR TODOS OS COMPONENTES .js",
       descriptions: [

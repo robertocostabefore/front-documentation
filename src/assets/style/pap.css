@@ -4,10 +4,6 @@
   --light--body-color: #fff;
 
   --dark--primary-color: var(--pap-primary-color);
-  --dark--text-color: #f0daff;
-  --dark--body-color: #030005;
-}
-
-.title {
-  margin-top: 100px !important;
+  --dark--text-color: var(--pap-primary-color);
+  --dark--body-color: #010001;
 }

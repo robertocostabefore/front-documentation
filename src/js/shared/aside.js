@@ -4,20 +4,22 @@ const asideOptionsByView = {
   documentation: {
     options: [
       {
-        title: "# TIME",
+        title: "TIME",
+        href: "#team",
         options: [
           {
             title: "# Acordos",
             href: "#agreements"
           },
           {
-            title: "# Boas Práticas",
+            title: "# Boas práticas",
             href: "#good-practices"
           }
         ]
       },
       {
-        title: "# SOBRE O FRONT",
+        title: "SOBRE O FRONT",
+        href: "#about-us",
         options: [
           {
             title: "# Integrantes",
@@ -27,6 +29,7 @@ const asideOptionsByView = {
       },
       {
         title: "SOBRE A EMPRESA",
+        href: "#enterprise",
         options: [
           {
             title: "# Quem somos?",
@@ -60,6 +63,7 @@ const asideOptionsByView = {
     options: [
       {
         title: "HUB",
+        href: "#about-us",
         options: [
           {
             title: "# Sobre",
@@ -70,7 +74,7 @@ const asideOptionsByView = {
             href: "#agreements"
           },
           {
-            title: "# Boas Práticas",
+            title: "# Boas práticas",
             href: "#good-practices"
           },
           {
@@ -81,6 +85,7 @@ const asideOptionsByView = {
       },
       {
         title: "GET STARTED",
+        href: "#get-started",
         options: [
           {
             title: "# Instalação",
@@ -91,34 +96,37 @@ const asideOptionsByView = {
             href: "#execution"
           },
           {
-            title: "# Novo Cliente",
+            title: "# Novo cliente",
             href: "#new-client"
           }
         ]
       },
       {
         title: "COMANDOS ÚTEIS",
+        href: "#utils",
         options: [
           {
-            title: "comming soon...",
-            href: "#utils"
+            title: "# Coming soon...",
+            href: "#content-utils"
           }
         ]
       },
       {
         title: "TECNOLOGIAS",
+        href: "#technologies",
         options: [
           {
-            title: "comming soon...",
-            href: "#technologies"
+            title: "# Coming soon...",
+            href: "#content-technologies"
           },
         ]
       },
       {
         title: "ERROS",
+        href: "#errors",
         options: [
           {
-            title: "Tela branca",
+            title: "# Tela branca",
             href: "#white-screen"
           }
         ]
@@ -129,6 +137,7 @@ const asideOptionsByView = {
     options: [
       {
         title: "PaP",
+        href: "#about-us",
         options: [
           {
             title: "# Sobre",
@@ -139,30 +148,32 @@ const asideOptionsByView = {
             href: "#agreements"
           },
           {
-            title: "# Boas Práticas",
+            title: "# Boas práticas",
             href: "#good-practices"
           }
         ]
       },
       {
         title: "ARQUITETURA",
+        href: "#architecture",
         options: [
           {
-            title: "Comandos SQL a serem executados",
-            href: "#architecture"
+            title: "# SQL",
+            href: "#architecture-sql",
           }
         ]
       },
       {
         title: "ERROS",
+        href: "#errors",
         options: [
           {
-            title: "Verificação de erros container sun",
-            href: "#errors"
+            title: "# Identificar erros sun",
+            href: "#identify-errors-sun"
           },
           {
-            title: "Verificação de erros container sun-core",
-            href: "#errors"
+            title: "# Identificar erros sun-core",
+            href: "#identify-errors-sun-core"
           }
         ]
       },
@@ -224,9 +235,10 @@ const populateAside = (view) => {
     item.className = "bd-links-group py-2"
 
     // Cria o Titulo da lista
-    const itemTitle = document.createElement("strong")
+    const itemTitle = document.createElement("a")
     itemTitle.className = "bd-links-heading d-flex w-100 align-items-center fw-bold"
-    itemTitle.innerHTML = option.title
+    itemTitle.href = option.href
+    itemTitle.textContent = option.title
 
     // Cria a lista do item
     const itemContent = createList(option)

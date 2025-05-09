@@ -1,6 +1,6 @@
 export default {
   description: "METAS e OBJETIVOS para sermos um time com entregas consistentes e cooperativo",
-  goals2025: [
+  listItems: [
     {
       title: "MANTER A DOCUMENTAÇÃO ATUALIZADA",
       descriptions: [

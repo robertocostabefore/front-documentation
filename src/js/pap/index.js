@@ -8,7 +8,8 @@ import architecture from "./architecture.js"
 
 handleRenderNavbar("pap")
 handleRenderAside("pap")
-renderOrderedList({ description: agreements.description, goals: agreements.agreements, containerId: 'container-agreements' })
-renderOrderedList({ description: goodPractices.description, goals: goodPractices.goodPractices, containerId: 'container-good-practices' })
-renderOrderedList({ description: architecture.description, goals: architecture.architecture, containerId: 'container-architecture' })
-renderOrderedList({ description: errors.description, goals: errors.errors, containerId: 'container-errors' })
+renderOrderedList({ description: agreements.description, listItems: agreements.listItems, containerId: 'container-agreements' })
+renderOrderedList({ description: goodPractices.description, listItems: goodPractices.listItems, containerId: 'container-good-practices' })
+
+architecture.forEach(item => renderOrderedList(item))
+errors.forEach(item => renderOrderedList(item))

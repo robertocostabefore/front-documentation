@@ -1,24 +1,47 @@
-export default {
-  description: "Estrutura e definiçoes do projeto",
-  architecture: [
+const sql = {
+  containerId: "container-architecture-sql",
+  description: "Sobre a pasta _db no projeto SUN",
+  listItems: [
     {
       title: "Comandos SQL a serem executados",
       descriptions: [
-        '<strong>Em cards que possuem back-end, ao dar pull no card/épico verificar se há arquivos SQL a serem executados</strong>',
-        `Dentro da pasta '_db' há arquivos sql, cada um corresponde a um respectivo banco de dados: `,
-        `Arquivo 'pap.sql' corresponde ao banco das UFs, então ao executar deve-se selecionar o(os) bancos antes da(das) UFs do servidor SUN antes de executar os comandos, após isso poderá executa-los corretamente`,
-        '<strong>Exemplo</strong>: sun_varejo_ms, sun_varejo_mt (open query)',
-        `Arquivo 'sun.sql' corresponde ao banco sun, então ao executar deve-se selecionar antes o banco sun do servidor SUN antes de executar os comandos, após isso poderá executa-los corretamente`,
-        '<strong>Exemplo</strong>: sun (open query)',
-        `Arquivo 'relatorios.sql' corresponde ao banco sun_relatorios, então ao executar deve-se selecionar antes o banco sun_relatorios do servidor SUN antes de executar os comandos, após isso poderá executa-los corretamente`,
-        '<strong>Exemplo</strong>: sun_relatorios (open query)',
-        `Pasta 'executados' corresponde aos comandos SQL que já foram executados e estão mergeados na branch master`,
-        '<strong>Erros comuns:</strong>',
-        'Vendas não estão aparecendo na listagem de vendas: ',
-        `Geralmente é um problema associado a comandos SQL que precisam ser executados em 'relatorios.sql'`,
-        'Erro ao salvar uma venda: ',
-        `Geralmente é um problema associado a comandos SQL que precisam ser executados em 'sun.sql'`,
+        "Em cards que possuem back-end, ao dar pull no card/épico verificar se há arquivos SQL a serem executados",
+        "Dentro da pasta '_db' há arquivos sql, cada um corresponde a um respectivo banco de dados",
+      ],
+    },
+    {
+      title: "pap.sql",
+      descriptions: [
+        "Arquivo 'pap.sql' corresponde ao banco das UFs",
+        "então ao executar deve-se selecionar o(os) bancos da(das) UFs para executa-los corretamente",
+        "<strong>Exemplo</strong>: sun_varejo_ms, sun_varejo_mt (open query)",
+        // adicionar nomes dos bancos, adicionar tmbm que por isso é mais simples executar no script do sistema...
+      ]
+    },
+    {
+      title: "sun.sql",
+      descriptions: [
+        "Arquivo 'sun.sql' corresponde ao banco sun, então deve-se executá-los no banco => sun",
+        "<strong>Exemplo</strong>: sun (open query)",
+      ]
+    },
+    {
+      title: "relatorios.sql",
+      descriptions: [
+        "Arquivo 'relatorios.sql' corresponde ao banco sun_relatorios, então deve-se executá-los no banco => sun_relatorios",
+        "<strong>Exemplo</strong>: sun_relatorios (open query)",
+      ]
+    },
+    {
+      title: "Pasta 'executados'",
+      descriptions: [
+        "Pasta 'executados' corresponde ao histórico dos comandos SQL's",
+        "Ou seja, são de cards que já foram aprovados e estão mergeados na branch master",
       ]
     },
   ]
 }
+
+export default [
+  sql
+]

@@ -92,8 +92,7 @@
 .dark-side #btn-change-scheme::before {
   content: '🌙';
   transform: translateX(0);
-  font-size: 16px;
-  top: 2px;
+  left: 0px;
 }
 
 @media (max-width: 991px) {

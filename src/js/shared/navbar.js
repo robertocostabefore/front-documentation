@@ -8,6 +8,16 @@ const navbarOptionsByView = {
     img: "assets/images/before-small-white-logo.svg",
     options: [
       {
+        title: "Doc Hub",
+        href: "hub.html",
+        class: "nav-link hub"
+      },
+      {
+        title: "Doc PAP",
+        href: "pap.html",
+        class: "nav-link pap"
+      },
+      {
         title: "Acordos",
         href: "#agreements",
         class: "nav-link"
@@ -22,22 +32,22 @@ const navbarOptionsByView = {
         href: "#enterprise",
         class: "nav-link"
       },
-      {
-        title: "Doc Hub",
-        href: "hub.html",
-        class: "nav-link hub"
-      },
-      {
-        title: "Doc PAP",
-        href: "pap.html",
-        class: "nav-link pap"
-      },
     ]
   },
   hub: {
     class: "hub-header",
     img: "assets/images/hub-small-white-logo.svg",
     options: [
+      {
+        title: "Doc Front",
+        href: "documentation.html",
+        class: "nav-link front"
+      },
+      {
+        title: "Doc PAP",
+        href: "pap.html",
+        class: "nav-link pap"
+      },
       {
         title: "Acordos",
         href: "#agreements",
@@ -58,22 +68,22 @@ const navbarOptionsByView = {
         href: "#get-started",
         class: "nav-link"
       },
-      {
-        title: "Doc PAP",
-        href: "pap.html",
-        class: "nav-link pap"
-      },
-      {
-        title: "Doc Front",
-        href: "documentation.html",
-        class: "nav-link front"
-      },
     ]
   },
   pap: {
     class: "pap-header",
     img: "assets/images/pap-small-white-logo.svg",
     options: [
+      {
+        title: "Doc Front",
+        href: "documentation.html",
+        class: "nav-link front"
+      },
+      {
+        title: "Doc Hub",
+        href: "hub.html",
+        class: "nav-link hub"
+      },
       {
         title: "Acordos",
         href: "#agreements",
@@ -83,16 +93,6 @@ const navbarOptionsByView = {
         title: "Sobre",
         href: "#about",
         class: "nav-link"
-      },
-      {
-        title: "Doc Hub",
-        href: "hub.html",
-        class: "nav-link hub"
-      },
-      {
-        title: "Doc Front",
-        href: "documentation.html",
-        class: "nav-link front"
       },
     ]
   },

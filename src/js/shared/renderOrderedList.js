@@ -1,14 +1,16 @@
 const arrowDownIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-down-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z'/></svg>"
 const arrowUpIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-up-circle-fill' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z'/></svg>"
 
-function renderOrderedList({ description, goals, containerId }) {
+function renderOrderedList({ description, listItems, containerId }) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  const title = createTitle(description)
-  const list = createList(goals)
+  if (description) {
+    const title = createTitle(description)
+    container.appendChild(title);
+  }
 
-  container.appendChild(title);
+  const list = createList(listItems)
   container.appendChild(list);
 }
 
@@ -19,11 +21,11 @@ function createTitle(text) {
   return title;
 }
 
-function createList(goals) {
+function createList(listItems) {
   const list = document.createElement("ol");
   list.className = "list-group list-group-numbered mb-3";
 
-  goals.forEach((goal, index) => {
+  listItems.forEach((goal, index) => {
     list.appendChild(createGoalItem(goal, index));
   });
 
@@ -51,7 +53,7 @@ function createGoalItem(goal, index) {
     const collapseId = `readMore-${index}`;
 
     const toggleButton = document.createElement("button");
-    toggleButton.className = "btn btn-outline mt-2 table-button-colapse-extra-content";
+    toggleButton.className = "btn btn-outline table-button-colapse-extra-content";
     toggleButton.setAttribute("data-bs-toggle", "collapse");
     toggleButton.setAttribute("data-bs-target", `#${collapseId}`);
     toggleButton.setAttribute("aria-expanded", "false");
@@ -59,7 +61,7 @@ function createGoalItem(goal, index) {
     toggleButton.innerHTML = arrowDownIcon;
 
     const collapseDiv = document.createElement("div");
-    collapseDiv.className = "collapse mt-2 mx-auto table-content";
+    collapseDiv.className = "collapse table-content table-colapse-extra-content";
     collapseDiv.id = collapseId;
 
     const readMoreList = createDescriptionsList(goal.readMore);

@@ -8,9 +8,9 @@ import agreements from './agreements.js'
 handleRenderNavbar("hub")
 handleRenderAside("hub")
 
-renderOrderedList({ description: goals.description, goals: goals.goals2025, containerId: 'container-goals' })
-renderOrderedList({ description: agreements.description, goals: agreements.agreements, containerId: 'container-agreements'})
-renderOrderedList({ description: goodPractices.description, goals: goodPractices.goodPractices, containerId: 'container-good-practices' })
+renderOrderedList({ description: goals.description, listItems: goals.listItems, containerId: 'container-goals' })
+renderOrderedList({ description: agreements.description, listItems: agreements.listItems, containerId: 'container-agreements'})
+renderOrderedList({ description: goodPractices.description, listItems: goodPractices.listItems, containerId: 'container-good-practices' })
 
 // fluxo de refatoracao =>
 // sem ajuste/melhoria/epico =>

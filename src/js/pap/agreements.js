@@ -1,6 +1,6 @@
 export default {
-  description: "Acordos de desenvolvimento no PROJETO PaP",
-  agreements: [
+  description: "",
+  listItems: [
     {
       title: "MANTER O CARD ATUALIZADO",
       descriptions: [

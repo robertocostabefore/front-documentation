@@ -1,6 +1,6 @@
 export default {
-  description: "Acordos de desenvolvimento no PROJETO HUB",
-  agreements: [
+  description: "",
+  listItems: [
     {
       title: "REFATORAR SEMPRE",
       descriptions: [

@@ -3,7 +3,7 @@
 :root {
   --pap-primary-color: #660099;
   --hub-primary-color: #0937D6;
-  --documentation-primary-color: #F86E32;
+  --documentation-primary-color: #ff4d00;
 }
 
 ::-webkit-scrollbar {
@@ -18,7 +18,16 @@ html {
 body {
   font-family: sans-serif;
   -ms-overflow-style: none !important;
-  transition: all .4s ease;
+  margin-top: 80px !important;
+  overflow: hidden;
+}
+
+body,
+ol,
+li,
+.card,
+.img-background {
+  transition: all 0.3s ease-in-out !important;
 }
 
 body.light-mode {
@@ -50,22 +59,36 @@ body.dark-side {
   margin: 0px auto;
 }
 
-.section {
+section {
   .title {
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: 500 !important;
+    margin-top: 0px !important;
   }
   .content {
     font-size: 16px;
   }
-}
 
-section {
-  scroll-margin-top: 100px;
+  .h4 {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    width: 110%;
+    background: var(--body-color);
+    padding: 0 0 16px 5%;
+    margin-left: -5%;
+  }
 }
 
 .title {
-  margin-top: 100px !important;
+  margin-top: 16px !important;
   margin-bottom: 32px !important;
+}
+
+.bd-main,
+.bd-aside {
+  height: calc(100dvh - 160px);
+  overflow: scroll;
 }
 
 .list-unstyled {
@@ -76,7 +99,12 @@ section {
 
 section:not(:last-child) {
   border-bottom: 2px solid;
-  margin-bottom: 6rem !important;
+  padding-bottom: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+section:last-child {
+  margin-bottom: 16px !important;
 }
 
 .border-none {
@@ -84,15 +112,15 @@ section:not(:last-child) {
 }
 
 .bd-sidebar {
-  position: sticky;
-  top: 72px;
   border-right: solid 1px !important;
-  min-height: calc(100dvh - 80px);
+  min-height: calc(100dvh - 176px);
   overflow: scroll;
 }
 
 .bd-links-heading {
   font-size: 20px !important;
+  color: var(--bs-body-color);
+  text-decoration: none;
 }
 
 .bd-links-link {
@@ -177,6 +205,13 @@ pre code {
 }
 .table-button-colapse-extra-content  {
   padding: 6px 0 !important;
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.table-colapse-extra-content {
+  position: relative;
+  left: 40px;
 }
 
 .table-content {

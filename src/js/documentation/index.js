@@ -9,5 +9,5 @@ handleRenderNavbar("documentation")
 
 handleRenderAside("documentation")
 
-renderOrderedList({ description: goals.description, goals: goals.goals2025, containerId: "container-agreements" })
-renderOrderedList({ description: goodPractices.description, goals: goodPractices.goodPractices, containerId: 'container-good-practices' })
+renderOrderedList({ description: goals.description, listItems: goals.listItems, containerId: "container-agreements" })
+renderOrderedList({ description: goodPractices.description, listItems: goodPractices.listItems, containerId: 'container-good-practices' })

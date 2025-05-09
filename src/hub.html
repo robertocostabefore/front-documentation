@@ -17,37 +17,40 @@
           Documentação do Projeto HUB de vendas
         </h1>
         <div class="row justify-content-md-center">
-          <div class="col col-sm-0 col-md-0 col-lg-3 col-xl-3" id="aside"></div>
-          <div class="col col-sm-12 col-md-12 col-lg-9 col-xl-9">
-            <section id="about">
-              <h2 class="h2"># Sobre</h2>
-              <div id="content-about" class="mb-5">
-                <p>
-                  O HUB padroniza e simplifica os processos comerciais de vendas dos clientes,
-                  integrando suas vendas, backoffice e logística de todos os canais físicos e
-                  digitais em uma única solução.
-                </p>
-                <p>Para muito mais informações acesse => <a href="https://www.hubdevendas.com.br/">hubdevendas.com.br</a></p>
-                <p><img src="assets/images/hub-website.png" alt="" class="img w-100"></p>
-              </div>
-            </section>
-            <section id="agreements">
-              <h2 class="h2"># Acordos</h2>
-              <div id="container-agreements" class="mb-5" />
-            </section>
-            <section id="good-practices">
-              <h2 class="h2"># Boas Práticas</h2>
-              <div id="container-good-practices" class="mb-5" />
-            </section>
-            <section id="goals">
-              <h2 class="h2"># Metas</h2>
-              <div id="container-goals" class="mb-5" />
+          <div class="col col-sm-0 col-md-0 col-lg-3 col-xl-3 bd-aside" id="aside"></div>
+          <div class="col col-sm-12 col-md-12 col-lg-9 col-xl-9 bd-main" id="content">
+            <section id="about-us">
+              <h2 class="h2">HUB</h2>
+              <section id="about">
+                <h4 class="h4"># Sobre</h4>
+                <div id="content-about">
+                  <p>
+                    O HUB padroniza e simplifica os processos comerciais de vendas dos clientes,
+                    integrando suas vendas, backoffice e logística de todos os canais físicos e
+                    digitais em uma única solução.
+                  </p>
+                  <p>Para muito mais informações acesse => <a href="https://www.hubdevendas.com.br/">hubdevendas.com.br</a></p>
+                  <p><img src="assets/images/hub-website.png" alt="" class="img w-100"></p>
+                </div>
+              </section>
+              <section id="agreements">
+                <h4 class="h4"># Acordos</h4>
+                <div id="container-agreements" />
+              </section>
+              <section id="good-practices">
+                <h4 class="h4"># Boas práticas</h4>
+                <div id="container-good-practices" />
+              </section>
+              <section id="goals">
+                <h4 class="h4"># Metas</h4>
+                <div id="container-goals" />
+              </section>
             </section>
             <section id="get-started">
-              <h2 class="h2"># GET STARTED</h2>
-              <section id="instalation" class="mb-5">
-                <h2 class="h2"># Instalação</h2>
-                <div class="content mb-5">
+              <h2 class="h2">GET STARTED</h2>
+              <section id="instalation">
+                <h4 class="h4"># Instalação</h4>
+                <div class="content">
                   <ol class="list-group list-group-numbered fw-normal pb-2">
                     <li class="list-group-item">
                       Crie um fork pessoal a partir deste repositório <a href="https://github.com/beforeti/hubvendas-web">REPOSITÓRIO-HUB</a>
@@ -100,37 +103,37 @@
                   </ol>
                 </div>
               </section>
-              <section id="execution" class="mb-5">
-                <h2 class="h2"># Execução</h2>
+              <section id="execution">
+                <h4 class="h4"># Execução</h4>
                 Após a instalação, dentro do diretório do hub, execute 
-                <div class="code-container pt-4 mb-5">
+                <div class="code-container pt-4">
                   <code class="code">docker-compose up</code>
                 </div>
               </section>
-              <section id="new-client" class="mb-5 border-none">
-                <h2 class="h2"># Inserindo um novo Cliente</h2>
-                <div id="content-new-client" class="mb-5">
-                  só Deus sabe como
+              <section id="new-client" class="border-none">
+                <h4 class="h4"># Novo Cliente</h4>
+                <div id="content-new-client">
+                  Como inserir um novo provedor/inquilino no HUB? só Deus sabe como
                 </div>
               </section>
             </section>
             <section id="utils">
-              <h2 class="h2"># COMANDOS ÚTEIS</h2>
-              <div id="content-utils" class="mb-5">
-                comming soon...
-              </div>
+              <h2 class="h2">COMANDOS ÚTEIS</h2>
+              <section id="content-utils">
+                <h4 class="h4"># Coming soon...</h4>
+              </section>
             </section>
             <section id="technologies">
-              <h2 class="h2"># TECNOLOGIAS</h2>
-              <div id="content-technologies" class="mb-5">
-                comming soon...
-              </div>
+              <h2 class="h2">TECNOLOGIAS</h2>
+              <section id="content-technologies">
+                <h4 class="h4"># Coming soon...</h4>
+              </section>
             </section>
             <section id="errors">
-              <h2 class="h2"># ERROS</h2>
-              <div id="white-screen" class="mb-5">
-                <h5 class="h5">Tela branca sem aparecer nada</h5>
-                <ol class="list-group list-group-numbered fw-normal pb-2">
+              <h2 class="h2">ERROS</h2>
+              <section id="white-screen">
+                <h4 class="h4">Tela branca sem aparecer nada</h4>
+                <ol class="list-group list-group-numbered fw-normal">
                   <li class="list-group-item">
                     A aba aplication está com um cache absurdo
                     <p> - As vezes a aplicação fica com o cache bugado no local, ainda n sabemos o motivo</p>
@@ -140,7 +143,7 @@
                     <p> - Se for um provedor novo, ou o seeder bugou, pode haver algum erro no retorno da request <code>whoami</code></p>
                   </li>
                 </ol>
-              </div>
+              </section>
             </section>
           </div>
         </div>

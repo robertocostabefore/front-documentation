@@ -1,6 +1,6 @@
 export default {
-  description: "Boas práticas do time do HUB",
-  goodPractices: [
+  description: "",
+  listItems: [
     {
       title: "PADRÃO DA PR",
       descriptions: [

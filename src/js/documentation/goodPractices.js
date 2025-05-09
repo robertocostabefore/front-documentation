@@ -1,6 +1,6 @@
 export default {
-  description: "Boas práticas do time",
-  goodPractices: [
+  description: "",
+  listItems: [
     {
       title: "DAILIES",
       descriptions: [
