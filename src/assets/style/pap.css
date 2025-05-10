@@ -7,3 +7,10 @@
   --dark--text-color: var(--pap-primary-color);
   --dark--body-color: #010001;
 }
+
+body {
+  .img {
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px 0px var(--text-color);
+  }
+}

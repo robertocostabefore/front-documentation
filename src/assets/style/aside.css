@@ -1,0 +1,37 @@
+.bd-aside {
+  height: calc(100dvh - 160px);
+  border-right: solid 1px !important;
+  min-height: calc(100dvh - 160px);
+  overflow: scroll;
+  position: sticky;
+  top: 144px;
+  margin-bottom: 16px;
+}
+
+.bd-links-heading {
+  font-size: 20px !important;
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
+
+.bd-links-link {
+  border-radius: var(--bs-border-radius);
+  padding: 8px;
+
+  a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    font-size: 14px !important;
+    margin: 8px 0px;
+  }
+
+  &:hover {
+    background-color: var(--primary-color);
+    padding: 8px 4px 8px 12px;
+
+    a {
+      color: white;
+      font-size: 16px !important;
+    }
+  }
+}

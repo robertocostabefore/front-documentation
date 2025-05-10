@@ -6,7 +6,7 @@
   position: fixed !important;
   top: 0px;
   width: 100%;
-  z-index: 1000;
+  z-index: 10000;
   height: 64px !important;
 }
 
@@ -117,14 +117,14 @@
     left: 0;
     width: 100%;
     background: var(--primary-color);
-    z-index: 1000;
+    z-index: 10000;
     border-top: 1px solid;
   }
   
   #btn-change-scheme {
     position: absolute;
-    right: 20px;
-    top: calc(100dvh - 110px);
+    right: calc(var(--bs-gutter-x) * .5);
+    top: calc(100dvh - 111px);
   }
 
   .nav-link {

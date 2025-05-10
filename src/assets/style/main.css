@@ -1,4 +1,6 @@
 @import url('navbar.css');
+@import url('aside.css');
+@import url('footer.css');
 
 :root {
   --pap-primary-color: #660099;
@@ -18,15 +20,16 @@ html {
 body {
   font-family: sans-serif;
   -ms-overflow-style: none !important;
-  margin-top: 80px !important;
-  overflow: hidden;
+  margin-top: 64px !important;
 }
 
 body,
 ol,
 li,
 .card,
-.img-background {
+.img-background,
+.h1,
+.h4 {
   transition: all 0.3s ease-in-out !important;
 }
 
@@ -71,12 +74,11 @@ section {
 
   .h4 {
     position: sticky;
-    top: 0px;
-    z-index: 1000;
-    width: 110%;
+    top: 136px;
+    z-index: 100;
+    width: 100%;
     background: var(--body-color);
-    padding: 0 0 16px 5%;
-    margin-left: -5%;
+    padding: 0 0 16px 0;
   }
 }
 
@@ -85,10 +87,15 @@ section {
   margin-bottom: 32px !important;
 }
 
-.bd-main,
-.bd-aside {
-  height: calc(100dvh - 160px);
-  overflow: scroll;
+h1 {
+  margin: 0px !important;
+  line-height: 40px;
+  position: sticky;
+  top: 64px;
+  width: 100%;
+  background-color: var(--body-color);
+  z-index: 1000;
+  padding: 16px 0;
 }
 
 .list-unstyled {
@@ -109,40 +116,6 @@ section:last-child {
 
 .border-none {
   border: none !important;
-}
-
-.bd-sidebar {
-  border-right: solid 1px !important;
-  min-height: calc(100dvh - 176px);
-  overflow: scroll;
-}
-
-.bd-links-heading {
-  font-size: 20px !important;
-  color: var(--bs-body-color);
-  text-decoration: none;
-}
-
-.bd-links-link {
-  border-radius: var(--bs-border-radius);
-  padding: 8px;
-
-  a {
-    color: var(--bs-body-color);
-    text-decoration: none;
-    font-size: 14px !important;
-    margin: 8px 0px;
-  }
-
-  &:hover {
-    background-color: var(--primary-color);
-    padding: 8px 4px 8px 12px;
-
-    a {
-      color: white;
-      font-size: 16px !important;
-    }
-  }
 }
 
 .code-container {
@@ -181,7 +154,7 @@ pre code {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .col-md-0 {
     display: none;
   }
@@ -203,6 +176,7 @@ pre code {
 .table-button-colapse-extra-content {
   width: 40px;
 }
+
 .table-button-colapse-extra-content  {
   padding: 6px 0 !important;
   position: absolute;

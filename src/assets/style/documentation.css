@@ -75,6 +75,10 @@ img {
       filter: none;
     }
   }
+
+  @media (max-width: 575px) {
+    width: 100% !important;
+  }
 }
 
 .container-people {
