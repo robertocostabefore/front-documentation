@@ -90,14 +90,32 @@ img {
 }
 
 .person {
-  width: calc(15% - 16px) !important;
-  min-width: 150px !important;
+  width: 192px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .img {
     filter: brightness(0.8) saturate(0.6);
+    margin-bottom: 16px;
+  }
+
+  .left-medal,
+  .right-medal {
+    display: block;
+    position: absolute;
+    width: 72px;
+    top: 124px;
+    filter: brightness(0.4) saturate(0.3);
+  }
+
+  .left-medal {
+    left: -8px;
+  }
+
+  .right-medal {
+    right: -8px;
   }
 }
 
@@ -111,11 +129,16 @@ img {
 
 .person:hover {
   color: var(--primary-color);
+  cursor: pointer;
+
   .nick-name {
     opacity: 1;
   }
-  .img {
+
+  .img,
+  .left-medal,
+  .right-medal {
+    transform: scale(1.1);
     filter: none;
-    transform: scale(1.05);
   }
 }
