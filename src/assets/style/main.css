@@ -154,6 +154,11 @@ pre code {
 }
 
 @media (max-width: 576px) {
+  .body {
+    width: 100dvw !important;
+    overflow-x: hidden !important;
+  }
+
   .col-sm-0 {
     display: none;
   }
@@ -161,11 +166,13 @@ pre code {
   .h1 {
     position: relative;
     top: 0px;
+    width: 100dvw !important;
   }
 
   .h4 {
     padding: 16px 0 16px calc(var(--bs-gutter-x) * 0.5) !important;
     top: 64px !important;
+    width: 100dvw !important;
   }
 }
 
