@@ -164,6 +164,16 @@ const asideOptionsByView = {
         ]
       },
       {
+        title: "COMPONENTES",
+        href: "#components",
+        options: [
+          {
+            title: "# Interface",
+            href: "#components-interface",
+          }
+        ]
+      },
+      {
         title: "ERROS",
         href: "#errors",
         options: [
@@ -174,6 +184,20 @@ const asideOptionsByView = {
           {
             title: "# Identificar erros sun-core",
             href: "#identify-errors-sun-core"
+          }
+        ]
+      },
+      {
+        title: "MÉTODOS",
+        href: "#methods",
+        options: [
+          {
+            title: "# _makeRequest2",
+            href: "#methods-makerequest2",
+          },
+          {
+            title: "# getPage",
+            href: "#methods-getpage",
           }
         ]
       },

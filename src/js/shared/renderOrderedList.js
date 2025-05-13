@@ -10,7 +10,7 @@ function renderOrderedList({ description, listItems, containerId }) {
     container.appendChild(title);
   }
 
-  const list = createList(listItems)
+  const list = createList(listItems, containerId)
   container.appendChild(list);
 }
 
@@ -21,18 +21,18 @@ function createTitle(text) {
   return title;
 }
 
-function createList(listItems) {
+function createList(listItems, containerId) {
   const list = document.createElement("ol");
   list.className = "list-group list-group-numbered mb-3";
 
   listItems.forEach((goal, index) => {
-    list.appendChild(createGoalItem(goal, index));
+    list.appendChild(createGoalItem(goal, index, containerId));
   });
 
   return list;
 }
 
-function createGoalItem(goal, index) {
+function createGoalItem(goal, index, containerId) {
   const item = document.createElement("li");
   item.className = "list-group-item d-flex justify-content-between align-items-start flex-wrap";
 
@@ -50,7 +50,7 @@ function createGoalItem(goal, index) {
   item.appendChild(content);
 
   if (goal.readMore && goal.readMore.length > 0) {
-    const collapseId = `readMore-${index}`;
+    const collapseId = `readMore-${index}-${containerId}`;
 
     const toggleButton = document.createElement("button");
     toggleButton.className = "btn btn-outline table-button-colapse-extra-content";
