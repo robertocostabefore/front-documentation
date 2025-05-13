@@ -63,11 +63,14 @@ body.dark-side {
 }
 
 section {
+  scroll-margin-top: 136px;
+
   .title {
     font-size: 16px;
     font-weight: 500 !important;
     margin-top: 0px !important;
   }
+
   .content {
     font-size: 16px;
   }
@@ -153,6 +156,38 @@ pre code {
   padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
 }
 
+.list-group-item::before,
+.table-button-colapse-extra-content {
+  width: 40px;
+}
+
+.table-button-colapse-extra-content  {
+  padding: 6px 0 !important;
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.table-colapse-extra-content {
+  position: relative;
+  left: 40px;
+}
+
+.table-content {
+  width: calc(100% - 40px);
+}
+
+.btn-outline {
+  --bs-btn-color: var(--text-color) !important;
+  --bs-btn-border-color: var(--text-color) !important;
+  --bs-btn-hover-bg: var(--primary-color) !important;
+  --bs-btn-hover-color: white !important;
+  --bs-btn-hover-border-color: var(--primary-color) !important;
+  --bs-btn-active-bg: var(--text-color) !important;
+  --bs-btn-active-border-color: var(--text-color) !important;
+  --bs-btn-disabled-color: var(--text-color) !important;
+  --bs-btn-disabled-border-color: var(--text-color) !important;
+}
+
 @media (max-width: 576px) {
   .col-sm-0 {
     display: none;
@@ -178,39 +213,11 @@ pre code {
 }
 
 @media (max-width: 991px) {
+  section {
+    scroll-margin-top: 64px;
+  }
+
   .col-md-0 {
     display: none;
   }
-}
-
-.btn-outline {
-  --bs-btn-color: var(--text-color) !important;
-  --bs-btn-border-color: var(--text-color) !important;
-  --bs-btn-hover-bg: var(--primary-color) !important;
-  --bs-btn-hover-color: white !important;
-  --bs-btn-hover-border-color: var(--primary-color) !important;
-  --bs-btn-active-bg: var(--text-color) !important;
-  --bs-btn-active-border-color: var(--text-color) !important;
-  --bs-btn-disabled-color: var(--text-color) !important;
-  --bs-btn-disabled-border-color: var(--text-color) !important;
-}
-
-.list-group-item::before,
-.table-button-colapse-extra-content {
-  width: 40px;
-}
-
-.table-button-colapse-extra-content  {
-  padding: 6px 0 !important;
-  position: absolute;
-  bottom: 0.5rem;
-}
-
-.table-colapse-extra-content {
-  position: relative;
-  left: 40px;
-}
-
-.table-content {
-  width: calc(100% - 40px);
 }

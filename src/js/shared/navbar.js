@@ -1,4 +1,4 @@
-import { changeBodyColorScheme, setBodyToLightMode } from "./changeColorScheme.js"
+import { changeBodyColorScheme, initBodyTheme } from "./changeColorScheme.js"
 
 const navbarHtmlElement = document.getElementById('navbar')
 
@@ -24,7 +24,7 @@ const navbarOptionsByView = {
       },
       {
         title: "Sobre nós",
-        href: "#about",
+        href: "#about-us",
         class: "nav-link"
       },
       {
@@ -167,7 +167,7 @@ const handleRenderNavbar = (view) => {
   populateNavbar(view)
 }
 
-setBodyToLightMode()
+initBodyTheme()
 
 export {
   handleRenderNavbar
