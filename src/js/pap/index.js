@@ -6,6 +6,8 @@ import agreements from './agreements.js'
 import goodPractices from "./goodPractices.js"
 import errors from "./errors.js"
 import architecture from "./architecture.js"
+import components from './components.js'
+import methods from './methods.js'
 
 handleRenderNavbar("pap")
 handleRenderAside("pap")
@@ -16,3 +18,5 @@ renderOrderedList({ description: goodPractices.description, listItems: goodPract
 
 architecture.forEach(item => renderOrderedList(item))
 errors.forEach(item => renderOrderedList(item))
+components.forEach(item => renderOrderedList(item))
+methods.forEach(item => renderOrderedList(item))
