@@ -32,13 +32,13 @@ const identifyErrorsSunCore = {
       title: "Verificar erros em endpoints sun-core",
       descriptions: [
         "Verificar o endpoint e o erro que ele retorna, se for pouco descritivo, poderá verificar melhor no log de erros dp shell",
-        "<strong>Exemplo de endpoint do sun-core:</strong> 'https://{URL}/core/v1/pap/usuario/verificar-contatos'",
+        "<strong>Exemplo de endpoint do sun-core:</strong><br><code>https://{URL}/core/v1/pap/usuario/verificar-contatos</code>",
       ]
     },
     {
       title: "Verificar erros no log sun-core",
       descriptions: [
-        "Acesso ao log de erros do shell: <code>sun-core-api docker:/var/www/html$ tail -f -n 500 storage/logs/laravel.log</code>",
+        "Acesso ao log de erros do shell: <br> <code>sun-core-api docker:/var/www/html$ tail -f -n 500 storage/logs/laravel.log</code>",
       ]
     },
   ]
