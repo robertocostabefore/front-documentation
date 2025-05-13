@@ -154,11 +154,6 @@ pre code {
 }
 
 @media (max-width: 576px) {
-  .body {
-    width: 100dvw !important;
-    overflow-x: hidden !important;
-  }
-
   .col-sm-0 {
     display: none;
   }
