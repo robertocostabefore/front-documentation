@@ -6,8 +6,8 @@ export default {
       descriptions: [
         "[`${card}`] `${tipo}`: msg",
         "[`${card_epico}`][`${card_n}`] `${tipo}`: msg",
-        "tipo: [FIX, FEAT, REFAT, STYLE]",
-        "ex: [MAS-3696] REFAT: refacting order analysis"
+        "'tipo' refere-se ao tipo de mudança: FIX (correção), FEAT (nova funcionalidade), REFAT(refatoração), STYLE (estilo/codestyle)",
+        "ex: [MAS-3696] REFAT: refactoring order analysis"
       ]
     },
     {

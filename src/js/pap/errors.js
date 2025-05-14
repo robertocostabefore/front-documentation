@@ -1,6 +1,6 @@
 const identifyErrorsSun = {
   containerId: "container-identify-errors-sun",
-  description: "Caso haja alguma inconsistencia no sistema, essa é a forma de verificar o log de erros dos endpoints do SUN",
+  description: "Caso haja alguma inconsistência no sistema, essa é a forma de verificar o log de erros dos endpoints do SUN",
   listItems: [
     {
       title: "Verificar erros em endpoints sun",
@@ -26,12 +26,12 @@ const identifyErrorsSun = {
 
 const identifyErrorsSunCore = {
   containerId: "container-identify-errors-sun-core",
-  description: "Caso haja alguma inconsistencia no sistema, essa é a forma de verificar o log de erros dos endpoints do SUN-CORE",
+  description: "Caso haja alguma inconsistência no sistema, essa é a forma de verificar o log de erros dos endpoints do SUN-CORE",
   listItems: [
     {
       title: "Verificar erros em endpoints sun-core",
       descriptions: [
-        "Verificar o endpoint e o erro que ele retorna, se for pouco descritivo, poderá verificar melhor no log de erros dp shell",
+        "Verificar o endpoint e o erro que ele retorna, se for pouco descritivo, poderá verificar melhor no log de erros do shell",
         "<strong>Exemplo de endpoint do sun-core:</strong><br><code>https://{URL}/core/v1/pap/usuario/verificar-contatos</code>",
       ]
     },

@@ -4,7 +4,7 @@ export default {
     {
       title: "REFATORAR SEMPRE",
       descriptions: [
-        "Sempre que iniciar um card, refatorar o máximo possível, se for em .js mudar tudo pra Vue.js",
+        "Sempre que iniciar um card, refatorar o máximo possível; se for em .js, migrar para Vue.js",
         "Sempre tentar melhorar como as lógicas são feitas"
       ]
     },

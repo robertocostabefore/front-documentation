@@ -4,7 +4,7 @@ export default {
     {
       title: "REFATORAR TODOS OS COMPONENTES .js",
       descriptions: [
-        "Mudar tudo pra Vue.js",
+        "Migrar todos os componentes .js para Vue.js",
         //como vamos estruturar isso?
       ]
     },
@@ -12,13 +12,13 @@ export default {
       title: "ATUALIZAR A VERSÃO DO VUE",
       descriptions: [
         "Passar a usar O Vue.js na versão mais recente (3.X)",
-        "Cuidado com dependencias meo nobre"
+        "Cuidado com dependencias 'meo' nobre"
       ]
     },
     {
       title: "ATUALIZAR A VERSÃO DO NODE",
       descriptions: [
-        "Node 12? pelo amor né, tem q atualizar isso"
+        "Node 12? Está muito defasado, é necessário atualizar."
       ]
     },
     {
@@ -30,7 +30,7 @@ export default {
     {
       title: "COMPONENTIZAR MAIS",
       descriptions: [
-        "Tem muita rapetição de codigo no hub",
+        "Tem muita repetição de codigo no hub",
         "Precisamos na refatoração, começar a reutilizar mais"
       ]
     },
@@ -43,7 +43,7 @@ export default {
     {
       title: "VITE? -- maybe --",
       descriptions: [
-        "Bea ta vendo",
+        "Bea está analisando a possibilidade dessa mudança",
         "Quero o webpack para remover data-cy"
       ]
     }

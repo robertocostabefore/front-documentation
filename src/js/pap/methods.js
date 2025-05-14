@@ -23,7 +23,7 @@ const _makeRequest2 = {
       ],
       readMore: [
         `O método verifica se deve nos levar para a rota do <strong><a href="pap.html#components-interface">componente de interface</a></strong>;`,
-        "Realiza uma requisição ajax que retonar um HTML a ser exibido."
+        "Realiza uma requisição ajax que retornar um HTML a ser exibido."
       ]
     },
     {
@@ -61,11 +61,11 @@ const getPage = {
       descriptions: [
         "Ocorre o Tratamento do <strong>parâmetro url</strong> de acordo com os módulos do vue;",
         "Realizamos redirecionamentos para componentes vue se necessário;",
-        "Verificamos se a requisição(url) atual já foi realizada anteriormente para a barrar ou não;",
+        "Verificamos se a requisição (URL) atual já foi realizada anteriormente para barrá-la ou não;",
       ],
       readMore: [
         "Ocorre o mapeamento e tratamento do history do navegador;",
-        "Realiza uma requisição ajax que retonar um HTML a ser exibido."
+        "Realiza uma requisição ajax que retornar um HTML a ser exibido."
       ]
     },
     {

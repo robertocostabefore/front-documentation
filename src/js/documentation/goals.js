@@ -10,11 +10,11 @@ export default {
     {
       title: "ESTIMAR DE FORMA PRECISA",
       descriptions: [
-        "Ter um bom enbasamento do que será ser feito para estimar de forma precisa e acertiva.",
+        "Ter um bom embasamento do que será ser feito para estimar de forma precisa e assertiva.",
       ],
       readMore: [
-        "Acertar uma estimativa é sempre um desafio, mas precisamos nos atentar e sempre darmos nosso melhor no hora de avaliar um card! Então sempre devemos:",
-        "Ler atentamento o escopo do card.",
+        "Acertar uma estimativa é sempre um desafio, mas precisamos nos atentar e sempre darmos nosso melhor na hora de avaliar um card! Então sempre devemos:",
+        "Ler atentamente o escopo do card.",
         "Analisar no sistema como é o fluxo atualmente (caso seja um card de mudança de fluxo).",
         "Analisar atentamente como é o fluxo proposto.",
         "Entender quais requisições precisarão ser feitas (solicitar novas, caso necessário).",
@@ -24,7 +24,7 @@ export default {
     {
       title: "UM CARD UMA RESPONSABILIDADE",
       descriptions: [
-        "Ao iniciar o desenvolvimento de um card, somo os responsáveis por ele.",
+        "Ao iniciar o desenvolvimento de um card, somos os responsáveis por ele.",
         "Cumprir a estimativa de tempo, entregar funcional, propor melhorias são nossas RESPONSABILIDADES, é o MÍNIMO esperado.",
         "Qualquer imprevisto que possa afetar a estimativa inicial deve ser avisado o quanto antes."
       ]
@@ -46,17 +46,17 @@ export default {
     {
       title: "GARANTIR A USABILIDADE",
       descriptions: [
-        "Cuidados com a experiência do usuário são excenssiais. Para garantir um sistema coeso e interessante o principal é:",
+        "Cuidados com a experiência do usuário são essenciais. Para garantir um sistema coeso e interessante o principal é:",
         "Garantir a responsividade.",
         "Telas em branco não fazem sentido, por isso, sempre adicione loadings ou toasts que avisem o que está acontecendo.",
-        "Textos simples e objetivos.",
+        "Use textos simples e objetivos.",
         "Integridade do sistema! Garantir que um botão ou ação funcione sempre, e mesmo que quebre não deixe o usuário sem resposta."
       ],
     },
     {
       title: "TESTAR AS ENTREGAS",
       descriptions: [
-        "Testar bastante no local.",
+        "Testar bastante no ambiente local.",
         "Testar em BETA -> vide doc do projeto -> mas avisar caso vá testar nesse ambiente.",
         "Dar uma olhada no plano de teste e usá-lo.",
         "Testar o código não somente no fluxo feliz, ou seja:",
@@ -75,7 +75,7 @@ export default {
       descriptions: [
         "Avisar o quanto antes quando houver problemas!",
         "Avisar sobre cenários que poderiam atrasar o desenvolvimento!",
-        "Sempre pedir ajudar, não tentar fazer tudo sozinho!"
+        "Sempre pedir ajuda, não tentar fazer tudo sozinho!"
       ]
     },
     {
@@ -84,13 +84,13 @@ export default {
         "Ler sempre muito bem os cards e entendê-los.",
         "Entender o fluxo e participar da apresentação.",
         "Fazer checklist dos afazeres ou até separar em cards menores.",
-        "Começar devagar, ir por partes (separar para conquistar)."
+        "Comece devagar, dividindo em partes (separe para conquistar)."
       ]
     },
     {
       title: "PROPOR MELHORIAS",
       descriptions: [
-        "Entendendo os fluxos propor melhorias.",
+        "Entendendo os fluxos, propor melhorias.",
         "Propor melhorias de usabilidade e etc."
       ]
     },
@@ -105,7 +105,7 @@ export default {
       title: "MODULARIZAR E REUTILIZAR",
       descriptions: [
         "Modularizar componentes e reutilizar",
-        "Usar utils/helpers/mixins para reutilizar funções e códigos que repetiriam"
+        "Usar utils/helpers/mixins para reutilizar funções e evitar repetição de código."
       ]
     }
   ]

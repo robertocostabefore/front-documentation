@@ -5,7 +5,7 @@ export default {
       title: "PADRÃO DA PR",
       descriptions: [
         "[`${card}`] `${tipo}`: msg",
-        "ex: [MAS-3696][MAS-1212] REFAT: refacting order analysis",
+        "ex: [MAS-3696][MAS-1212] REFAT: refactoring order analysis",
       ],
       readMore: [
         "[`${card_epico}`][`${card_n}`] `${tipo}`: msg",

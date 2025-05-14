@@ -5,7 +5,7 @@ descrição:
 METAS PARA 2025
   # 1
     Melhorarmos no quesito estimativa
-      - Estimativas mais precisas e acertivas
+      - Estimativas mais precisas e assertivas
       - Cumprir as estimativas de tempo
       -
 
