@@ -206,8 +206,8 @@ const asideOptionsByView = {
         href: "#system",
         options: [
           {
-            title: "# Login",
-            href: "#system-login",
+            title: "# Definições iniciais",
+            href: "#system-initialdefinition",
           },
         ]
       },
