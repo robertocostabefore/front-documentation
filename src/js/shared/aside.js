@@ -201,6 +201,16 @@ const asideOptionsByView = {
           }
         ]
       },
+      {
+        title: "SISTEMA",
+        href: "#system",
+        options: [
+          {
+            title: "# Definições iniciais",
+            href: "#system-initialdefinition",
+          },
+        ]
+      },
     ]
   },
 }
