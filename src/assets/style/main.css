@@ -179,8 +179,8 @@ pre code {
 .btn-outline {
   --bs-btn-color: var(--text-color) !important;
   --bs-btn-border-color: var(--text-color) !important;
-  --bs-btn-hover-bg: var(--primary-color) !important;
-  --bs-btn-hover-color: white !important;
+  --bs-btn-hover-bg: var(--body-color) !important;
+  --bs-btn-hover-color: var(--primary-color) !important;
   --bs-btn-hover-border-color: var(--primary-color) !important;
   --bs-btn-active-bg: var(--text-color) !important;
   --bs-btn-active-border-color: var(--text-color) !important;

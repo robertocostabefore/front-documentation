@@ -4,13 +4,13 @@
   --light--body-color: #fff;
 
   --dark--primary-color: var(--hub-primary-color);
-  --dark--text-color: var(--hub-primary-color);
+  --dark--text-color: #fff;
   --dark--body-color: #000001;
 }
 
 body {
-  .img {
+  .img-hub {
     border-radius: 8px;
-    box-shadow: 0px 0px 2px 0px var(--text-color);
+    box-shadow: 0px 0px 4px 0px var(--primary-color);
   }
 }

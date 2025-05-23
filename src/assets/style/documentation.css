@@ -6,7 +6,7 @@
   --light--body-color: #fff;
 
   --dark--primary-color: var(--documentation-primary-color);
-  --dark--text-color: var(--documentation-primary-color);
+  --dark--text-color: #fff;
   --dark--body-color: #000;
 }
 
@@ -81,6 +81,17 @@ img {
   }
 }
 
+.dark-side {
+  .card {
+    img {
+      filter: brightness(1000%) saturate(0%);
+    }
+    &:hover {
+      border: 2px solid var(--text-color) !important;
+    }
+  }
+}
+
 .container-people {
   margin-top: 32px;
   display: flex !important;
@@ -99,6 +110,9 @@ img {
   .img {
     filter: brightness(0.8) saturate(0.6);
     margin-bottom: 16px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--text-color);
   }
 
   .left-medal,
@@ -128,11 +142,12 @@ img {
 }
 
 .person:hover {
-  color: var(--primary-color);
+  color: var(--text-color);
   cursor: pointer;
 
   .nick-name {
     opacity: 1;
+    font-size: 12px;
   }
 
   .img,
