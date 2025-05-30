@@ -64,13 +64,6 @@ export default {
       ]
     },
     {
-      title: "DOCUMENTAR NOS CARDS",
-      descriptions: [
-        "Documentar dentro do card as mudanças de escopo os combinados feitos em chat/meet.",
-        "Documentar no card o acordo realizado entre back e front, escrever em um comentário como ficou a requisição e sua resposta.",
-      ]
-    },
-    {
       title: "SEMPRE COMUNICAR",
       descriptions: [
         "Avisar o quanto antes quando houver problemas!",
@@ -107,6 +100,43 @@ export default {
         "Modularizar componentes e reutilizar",
         "Usar utils/helpers/mixins para reutilizar funções e evitar repetição de código."
       ]
-    }
+    },
+    {
+      title: "GARANTIR A ITERAÇÃO SOBRE UMA VARIÁVEL QUE EXISTA",
+      descriptions: [
+        "foo?.bar?.goo?.map() || '--'",
+      ]
+    },
+    {
+      title: "SEMPRE ALINHAR COM O BACKEND",
+      descriptions: [
+        "Sempre fazer o alinhamento",
+      ]
+    },
+    {
+      title: "DOCUMENTAR NOS CARDS",
+      descriptions: [
+        "Documentar dentro do card as mudanças de escopo os combinados feitos em chat/meet.",
+        "Documentar no card o acordo realizado entre back e front, escrever em um comentário como ficou a requisição e sua resposta.",
+      ]
+    },
+    {
+      title: "SER SOMMELIER DE COMENTÁRIO",
+      descriptions: [
+        "Garantir que o meet ta escrito no card",
+      ]
+    },
+    {
+      title: "SEMPRE RESPONDER AO CHAT",
+      descriptions: [
+        "",
+      ]
+    },
+    // {
+    //   title: "FAZER O CHECKLIST",
+    //   descriptions: [
+    //     "",
+    //   ]
+    // }
   ]
 }
