@@ -98,6 +98,10 @@ const asideOptionsByView = {
           {
             title: "# Novo cliente",
             href: "#new-client"
+          },
+          {
+            title: "# Acessar Pesquisas",
+            href: "#surveys"
           }
         ]
       },
@@ -106,8 +110,18 @@ const asideOptionsByView = {
         href: "#utils",
         options: [
           {
-            title: "# Coming soon...",
-            href: "#content-utils"
+            title: "# Comando para enviar pesquisas",
+            href: "#content-utils-surveys"
+          }
+        ]
+      },
+      {
+        title: "CRIPTOGRAFIA",
+        href: "#encrypt",
+        options: [
+          {
+            title: "# Ativando criptografia",
+            href: "#content-encrypt"
           }
         ]
       },

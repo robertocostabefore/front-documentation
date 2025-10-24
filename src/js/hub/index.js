@@ -6,6 +6,9 @@ import goals from "./goals.js"
 import goodPractices from "./goodPractices.js"
 import agreements from './agreements.js'
 import errors from "./errors.js"
+import encrypt from './encrypt.js'
+import utils from './utils.js'
+import surveys from './surveys.js'
 
 handleRenderNavbar("hub")
 handleRenderAside("hub")
@@ -15,7 +18,9 @@ renderOrderedList({ description: goals.description, listItems: goals.listItems, 
 renderOrderedList({ description: agreements.description, listItems: agreements.listItems, containerId: 'container-agreements'})
 renderOrderedList({ description: goodPractices.description, listItems: goodPractices.listItems, containerId: 'container-good-practices' })
 errors.forEach(item => renderOrderedList(item))
-
+encrypt.forEach(item => renderOrderedList(item))
+utils.forEach(item => renderOrderedList(item))
+surveys.forEach(item => renderOrderedList(item))
 // fluxo de refatoracao =>
 // sem ajuste/melhoria/epico =>
 //    criar o card com a tag [REFAT-VUE][MODULO(ORDER/etc)] e vincular ao MAS-XXXX
