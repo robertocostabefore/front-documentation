@@ -31,6 +31,19 @@ const whiteScreen = {
         "4.3 - A inexistencia do provedor em `/etc/hosts`",
       ]
     },
+    {
+      title: "Criptografia ativa apenas no front",
+      descriptions: [
+        "Caso haja o seguinte erro no console do navegador: <code>InvalidCharacterError: Failed to execute 'atob' on 'Window': The string to be decoded is not correctly encoded.</code>",
+        "Então siga os passos:",
+      ],
+      readMore: [
+        "1 - Vá até o seu arquivo .env",
+        "2 - Encontre a variável chamada <strong>VUE_APP_ENCRYPT_COMUNICATION</strong>",
+        "3 - Remova o valor e deixe a variável vazia: <strong>VUE_APP_ENCRYPT_COMUNICATION=</strong>",
+        "4 - Pronto, agora basta subir o container do front novamente e o problema terá sido resolvido",
+      ]
+    },
   ]
 }
 
