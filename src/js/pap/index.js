@@ -8,6 +8,7 @@ import errors from "./errors.js"
 import architecture from "./architecture.js"
 import components from './components.js'
 import methods from './methods.js'
+import system from './system.js'
 
 handleRenderNavbar("pap")
 handleRenderAside("pap")
@@ -20,3 +21,4 @@ architecture.forEach(item => renderOrderedList(item))
 errors.forEach(item => renderOrderedList(item))
 components.forEach(item => renderOrderedList(item))
 methods.forEach(item => renderOrderedList(item))
+system.forEach(item => renderOrderedList(item))
