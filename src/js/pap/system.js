@@ -58,7 +58,22 @@ const initialDefinitions = {
   ]
 }
 
+const acessingAppPap = {
+  containerId: "container-system-acessing-app",
+  description: "Documentação para acessar o PAP no modo APP",
+  listItems: [
+    {
+      title: "Acessando o APP",
+      descriptions: [
+        "Para acessar o APP do PAP no local, utilize a seguinte URL: <code>http://{URL}/_sys/app.php#/</code>",
+        "Para acessar o APP do PAP em BETA, utilize o navegador na visão mobile por meio da Device Toolbar.",
+      ]
+    },
+  ]
+}
+
 
 export default [
-  initialDefinitions
+  initialDefinitions,
+  acessingAppPap
 ]

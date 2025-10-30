@@ -223,6 +223,10 @@ const asideOptionsByView = {
             title: "# Definições iniciais",
             href: "#system-initialdefinition",
           },
+          {
+            title: "# Acessando sistema no modo APP",
+            href: "#system-acessing-app",
+          },
         ]
       },
     ]
