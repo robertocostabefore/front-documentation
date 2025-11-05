@@ -72,8 +72,22 @@ const acessingAppPap = {
   ]
 }
 
+const acessingBiometryAtt = {
+  containerId: "container-system-acessing-biometry-att",
+  description: "Documentação para acessar a tela de atualização da Biometria no PAP",
+  listItems: [
+    {
+      title: "Acessando a tela",
+      descriptions: [
+        "Para acessar a tela de atualização da Biometria no PAP, utilize a seguinte URL: <code>http://{URL}/_sys/biometria/index.php</code>",
+        "A partir dela você poderá editar as informações da biometria de uma venda. Para isso, cole o código da venda no campo indicado e clique em <strong>BUSCAR</strong>",
+      ]
+    },
+  ]
+}
 
 export default [
   initialDefinitions,
-  acessingAppPap
+  acessingAppPap,
+  acessingBiometryAtt
 ]
