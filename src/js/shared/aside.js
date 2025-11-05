@@ -223,6 +223,14 @@ const asideOptionsByView = {
             title: "# Definições iniciais",
             href: "#system-initialdefinition",
           },
+          {
+            title: "# Acessando sistema no modo APP",
+            href: "#system-acessing-app",
+          },
+          {
+            title: "# Acessando tela de Atualização de Biometria",
+            href: "#system-acessing-biometry-att",
+          },
         ]
       },
     ]
