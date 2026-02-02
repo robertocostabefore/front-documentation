@@ -136,6 +136,950 @@
                 <div id="container-white-screen" />
               </section>
             </section>
+            <section id="sale-flow">
+  <h2 id="fluxo-de-venda" class="h2 toc-header"><a href="#fluxo-de-venda" class="toc-anchor"></a> FLUXO DE VENDA</h2>
+  <section id="order-props">
+    <h4 id="propriedades-genéricas-do-pedido" class="h4 toc-header"><a href="#propriedades-genéricas-do-pedido"
+        class="toc-anchor"></a> # Propriedades genéricas do pedido</h4>
+    <div id="container-order-props">
+      <div class="title mb-3 mt-3 fw-bold">Propriedades que afetam todas as vendas, essas propriedades vêm direto no obj
+        do list-sale</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_captation</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Tipo Captação` na tela de Iniciar Pedido - Atribuição de vendedor</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-order-props">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.has_captation</code></li>
+              <li>getter: <code>'Order/Core/getHasCaptation'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_ctos</div>
+            <ul class="mb-0">
+              <li>Aplica a lógica de busca e seleção de CTOs no mapa de cobertura</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-1-container-order-props">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.has_ctos</code></li>
+              <li>getter: <code>'Order/Core/getHasCtos'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">can_move_pin</div>
+            <ul class="mb-0">
+              <li>Faz com que o pin no mapa de cobertura possa ser movimentado</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-2-container-order-props">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.can_move_pin</code></li>
+              <li>getter: <code>'Order/Core/getCanMovePin'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_to_change_flow_by_role</div>
+            <ul class="mb-0">
+              <li>Remove a rota ‘schedule’(agendamento) caso essa flag seja true e caso seja o flow de PAP (1)</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-3-container-order-props">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.has_to_change_flow_by_role</code></li>
+              <li>getter: <code>'Order/Core/getHasToChangeFlowByRole'</code></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="client">
+    <h4 id="dados-do-cliente" class="h4 toc-header"><a href="#dados-do-cliente" class="toc-anchor"></a> # Dados do
+      Cliente</h4>
+    <div id="container-client">
+      <div class="title mb-3 mt-3 fw-bold">Propriedade que afetam a tela de cadastro de dados do cliente, no list-sale
+        vem no &lt;code&gt;routes_props.client&lt;/code&gt; de um fluxo</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_landline</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Telefone Fixo` na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_landline</code></li>
+              <li>getter: <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_landline'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_cto</div>
+            <ul class="mb-0">
+              <li>Não faz nada no momento…</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-1-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_cto</code></li>
+              <li>getter: <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_cto'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_schooled</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Cliente Escolarizado` na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-2-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_schooled</code></li>
+              <li>getter: <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_schooled'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_rg_exempt</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Isento RG` na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-3-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_rg_exempt</code></li>
+              <li>getter: <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_rg_exempt'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_profession</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Profissão` na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-4-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_rg_profession</code></li>
+              <li>getter: <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_rg_profession'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_father_name</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Nome do Pai` na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-5-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_father_name</code></li>
+              <li>getter: <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_father_name'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_marital_status</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Status Civil` na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-6-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_marital_status</code></li>
+              <li>getter: <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_marital_status'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_contract_type</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Tipo Contrato` na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-7-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_contract_type</code></li>
+              <li>getter: <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_contract_type'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_opening_date</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Data Abertura` na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-8-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_opening_date</code></li>
+              <li>getter: <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_opening_date'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_corporate_type</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Tipo de Empresa` na tela de Dados do Cliente - Identificação do Cliente</li>
+              <li>verifica em getAuditFlowClient ou seja apenas no fluxo da auditoria</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-9-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_corporate_type</code></li>
+              <li>getter: <code>'getters['Audit/getAuditFlow'].routes_props.client.has_corporate_type'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_corporate_state</div>
+            <ul class="mb-0">
+              <li>Exibe o campo `Estado da Empresa` na tela de Dados do Cliente - Identificação do Cliente</li>
+              <li>verifica em getAuditFlowClient ou seja apenas no fluxo da auditoria</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-10-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_corporate_state</code></li>
+              <li>getter: <code>'getters['Audit/getAuditFlow'].routes_props.client.has_corporate_state'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_legal_person_state</div>
+            <ul class="mb-0">
+              <li>Não faz nada no momento…</li>
+              <li>verifica em getAuditFlowClient ou seja apenas no fluxo da auditoria</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-11-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_legal_person_state</code></li>
+              <li>getter: <code>'getters['Audit/getAuditFlow'].routes_props.client.has_legal_person_state'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">is_another_contact_required</div>
+            <ul class="mb-0">
+              <li>Torna o campo ‘Outro Contato’ obrigatório na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-12-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.is_another_contact_required</code>
+              </li>
+              <li>getter: <code>'getters['Audit/getAuditFlow'].routes_props.client.is_another_contact_required'</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_whatsapp_number</div>
+            <ul class="mb-0">
+              <li>Exibe o campo ‘Número Whatsapp’ na tela de Dados do Cliente - Identificação do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-13-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_whatsapp_number</code></li>
+              <li>getter: <code>'getters['Audit/getAuditFlow'].routes_props.client.has_whatsapp_number'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_contact_type</div>
+            <ul class="mb-0">
+              <li>Exibe o campo ‘Tipo Contato’ </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-14-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_contact_type</code></li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.client.has_contact_type'</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_another_contract_type</div>
+            <ul class="mb-0">
+              <li>Exibe o campo ‘Tipo Outro Contato’ </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-15-container-client">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.sale_flows[index].routes_props.client.has_another_contact_type</code></li>
+              <li>getter:
+                <code>'Order/Core/selectedProviderSaleFlow.routes_props.client.has_another_contract_type'</code></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="address">
+    <h4 id="dados-do-endereço-do-cliente" class="h4 toc-header"><a href="#dados-do-endereço-do-cliente"
+        class="toc-anchor"></a> # Dados do Endereço do cliente</h4>
+    <div id="container-address">
+      <div class="title mb-3 mt-3 fw-bold">Propriedade que afetam a tela de cadastro de endereço do cliente, no
+        list-sale vem no &lt;code&gt;routes_props.address&lt;/code&gt; de um fluxo</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_cto</div>
+            <ul class="mb-0">
+              <li>Verifica a flag e se o status da cobertura = 4 (cidade sem mapeamento) para exibir a mensagem "O
+                endereço foi realizado em uma região sem mapeamento de CTOs." e o botão Finalizar. Verifica a flag e se
+                o status da cobertura = 4 (cidade sem mapeamento) para exibir a mensagem "O endereço foi realizado em
+                uma região sem mapeamento de CTOs." e o botão Finalizar.</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_cto</code></li>
+              <li>getter: <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_cto</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_reference_point</div>
+            <ul class="mb-0">
+              <li>Exibe o campo ‘Referência’ na tela de Dados do Cliente - Endereço do Cliente</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-1-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_reference_point</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_reference_point</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_billing_address</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Endereço de Cobrança' na auditoria</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-2-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_billing_address</code></li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.address.has_billing_address</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_complement_condominium</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Condomínio' na auditoria e na venda</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-3-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_complement_condominium</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_complement_condominium</code>
+              </li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.address.has_complement_condominium</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_location_type</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Tipo Endereço' na auditoria e na venda</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-4-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_location_type</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_location_type</code>
+              </li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.address.has_location_type</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_address_group</div>
+            <ul class="mb-0">
+              <li>Não faz nada no momento… </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-5-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_location_type</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_address_group</code>
+              </li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.address.has_address_group</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_reference_point</div>
+            <ul class="mb-0">
+              <li>Não faz nada no momento… </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-6-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_location_type</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_reference_point</code>
+              </li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.address.has_reference_point</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">with_select</div>
+            <ul class="mb-0">
+              <li>Não faz nada no momento… </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-7-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_location_type</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.with_select</code></li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.address.with_select</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_coverage_ares</div>
+            <ul class="mb-0">
+              <li>Não faz nada no momento… </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-8-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_location_type</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_coverage_ares</code>
+              </li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.address.has_coverage_ares</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_group_options</div>
+            <ul class="mb-0">
+              <li>Exibe o campo grupos de endereço</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-9-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_group_options</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_group_options</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_simple_complements</div>
+            <ul class="mb-0">
+              <li>Exibe os campos de complemento</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-10-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_simple_complements</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_simple_complements</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_select_state_and_city_fields</div>
+            <ul class="mb-0">
+              <li>Exibe os campos de estado e cidade do tipo 'select'</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-11-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.has_select_state_and_city_fields</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.has_select_state_and_city_fields</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">neighborhood_disabled</div>
+            <ul class="mb-0">
+              <li>Desabilita o campo bairro na tela de endereço</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-12-container-address">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.address.neighborhood_disabled</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.address.neighborhood_disabled</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="analysis">
+    <h4 id="análise" class="h4 toc-header"><a href="#análise" class="toc-anchor"></a> # Análise</h4>
+    <div id="container-analysis">
+      <div class="title mb-3 mt-3 fw-bold">Propriedade que afetam a tela análise, no list-sale vem no
+        &lt;code&gt;routes_props.analysis&lt;/code&gt; de um fluxo</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_coverage</div>
+            <ul class="mb-0">
+              <li>Define se a análise de cobertura será realizada</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-analysis">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.analysis.has_coverage</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.analysis.has_coverage</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_credit</div>
+            <ul class="mb-0">
+              <li>Define se a análise de crédito será realizada</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-1-container-analysis">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.analysis.has_credit</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.analysis.has_credit</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_continue_jump_to_offers</div>
+            <ul class="mb-0">
+              <li>Define se na tela de analise ao clicar continuar, se está flag for true e a cobertura tem o status
+                ‘não realizado - not realized’ Ou o status da cobertura tem status ‘cidade sem mapeamento - city without
+                mapping’</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-2-container-analysis">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.analysis.has_coverage</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.analysis.has_coverage</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_continue_disapprove_analysis</div>
+            <ul class="mb-0">
+              <li>Mostra o botão 'Continuar' mesmo com a análise reprovada</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-3-container-analysis">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.analysis.has_continue_disapprove_analysis</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.analysis.has_continue_disapprove_analysis</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_handle_approved_analysis</div>
+            <ul class="mb-0">
+              <li>Na análise de crédito individual, se isCreditApproved ou status = 4 (análise manual), exibe "Análises
+                aprovadas" e o botão Continuar, ocultando Tentar novamente. Se houver flag de Crédito + Cobertura, além
+                disso verifica se a Cobertura está aprovada.</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-4-container-analysis">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.analysis.has_handle_approved_analysis</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.analysis.has_handle_approved_analysis</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_continue_with_credit_disapproved</div>
+            <ul class="mb-0">
+              <li>Na tela de análise caso a analise de credito nao foi aprovada ou analise de credito nao aprovada e não
+                tem cto esconde o botão de tentar novamente e exibe o botão de finalizar e continuar, além da mensagem
+                de ‘Ops, a análise de crédito prévia não foi aprovada, porém, você poderá seguir com este pedido.’ </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-5-container-analysis">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.analysis.has_continue_with_credit_disapproved</code>
+              </li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.analysis.has_continue_with_credit_disapproved</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_continue_with_credit_disapproved</div>
+            <ul class="mb-0">
+              <li>Na tela de análise caso a analise de credito nao foi aprovada ou analise de credito nao aprovada e não
+                tem cto esconde o botão de tentar novamente e exibe o botão de finalizar e continuar, além da mensagem
+                de ‘Ops, a análise de crédito prévia não foi aprovada, porém, você poderá seguir com este pedido.’ </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-6-container-analysis">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.analysis.has_continue_with_credit_disapproved</code>
+              </li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.analysis.has_continue_with_credit_disapproved</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_should_consider_bypass_coverage</div>
+            <ul class="mb-0">
+              <li>Na tela de análise caso de erro em nos endpoints de analise credito e cobertura ou algum desses
+                individualmente caso esta flag seja true executa uma função que leva em conta a flag
+                shouldBypassCoverage e caso esta seja false exibe botão tentar novamente e a mensagem ‘A consulta de
+                cobertura não foi realizada. Sua consulta será realizada posteriormente pela equipe de Backoffice’ </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-7-container-analysis">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.analysis.has_should_consider_bypass_coverage</code>
+              </li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.analysis.has_should_consider_bypass_coverage</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="combos-offers">
+    <h4 id="ofertas-de-combos" class="h4 toc-header"><a href="#ofertas-de-combos" class="toc-anchor"></a> # Ofertas de
+      combos</h4>
+    <div id="container-combos-offers">
+      <div class="title mb-3 mt-3 fw-bold">Propriedade que afetam a tela seleção de combo, no list-sale vem no
+        &lt;code&gt;routes_props.combos&lt;/code&gt; de um fluxo</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">requires_city_uuid</div>
+            <ul class="mb-0">
+              <li>Envia o parâmetro 'city_uuid' no endpoint fetchOptionsCampaign ('/campaign/list-all')</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-combos-offers">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.combo.requires_city_uuid</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.combo.requires_city_uuid</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="separate-offers">
+    <h4 id="ofertas-avulsas" class="h4 toc-header"><a href="#ofertas-avulsas" class="toc-anchor"></a> # Ofertas avulsas
+    </h4>
+    <div id="container-separate-offers">
+      <div class="title mb-3 mt-3 fw-bold">Propriedade que afetam a tela seleção de ofertas avulsas, no list-sale vem no
+        &lt;code&gt;routes_props.separate&lt;/code&gt; de um fluxo</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">requires_city_uuid</div>
+            <ul class="mb-0">
+              <li>Envia o parâmetro 'city_uuid' no endpoint fetchOptionsCampaign ('/campaign/list-all')</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-separate-offers">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.separate.requires_city_uuid</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.separate.requires_city_uuid</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="customize-service">
+    <h4 id="personalização-de-serviço" class="h4 toc-header"><a href="#personalização-de-serviço"
+        class="toc-anchor"></a> # Personalização de Serviço</h4>
+    <div id="container-customize-service">
+      <div class="title mb-3 mt-3 fw-bold">Propriedade que afetam a tela de personalização de serviços, no list-sale vem
+        no &lt;code&gt;routes_props.customize_services&lt;/code&gt; de um fluxo</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_line_number_required</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Número da linha *' ou 'Número da linha atual *' dependendo da movimentacao selecionada
+                na venda</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-customize-service">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.customize_services.has_line_number_required</code>
+              </li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.customize_services.has_line_number_required</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_sim_card</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Tipo do SIM *' caso seja movimentacao Alta na venda</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-1-container-customize-service">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.customize_services.has_sim_card</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.customize_services.has_sim_card</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="additives">
+    <h4 id="aditivos" class="h4 toc-header"><a href="#aditivos" class="toc-anchor"></a> # Aditivos</h4>
+    <div id="container-additives">
+      <div class="title mb-3 mt-3 fw-bold">Propriedade que afetam a tela de Contrato e Promoção ou somente Promoção, no
+        list-sale vem no &lt;code&gt;routes_props.additives&lt;/code&gt; de um fluxo</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_acession</div>
+            <ul class="mb-0">
+              <li>Não faz nada no momento… </li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-additives">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.additives.has_acession</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.additives.has_acession</code></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="contract">
+    <h4 id="contrato" class="h4 toc-header"><a href="#contrato" class="toc-anchor"></a> # Contrato</h4>
+    <div id="container-contract">
+      <div class="title mb-3 mt-3 fw-bold">Propriedades que afetam a tela de cadastro de contrato, no list-sale vem no
+        &lt;code&gt;routes_props.contract&lt;/code&gt; de um fluxo</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_acession</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Promoção' na auditoria</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-contract">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.contract.has_acession</code></li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.contract.has_acession</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_additive_by_city</div>
+            <ul class="mb-0">
+              <li>Habilita a busca de aditivos por cidade</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-1-container-contract">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.contract.has_additive_by_city</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.contract.has_additive_by_city</code>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_contract_type</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Tipo do Contrato' na auditoria e na venda</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-2-container-contract">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.contract.has_contract_type</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.contract.has_contract_type</code>
+              </li>
+              <li>getter: <code>getters['Audit/getAuditFlow''].routes_props.contract.has_contract_type</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_wallet</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Carteira' na auditoria</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-3-container-contract">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.contract.has_wallet</code></li>
+              <li>getter: <code>getters['Audit/getAuditFlow''].routes_props.contract.has_wallet</code></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section id="billing">
+    <h4 id="fatura" class="h4 toc-header"><a href="#fatura" class="toc-anchor"></a> # Fatura</h4>
+    <div id="container-billing">
+      <div class="title mb-3 mt-3 fw-bold">Propriedades que afetam a tela de cadastro de fatura, no list-sale vem no
+        &lt;code&gt;routes_props.billing&lt;/code&gt; de um fluxo</div>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_billing_address</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Endereço de Cobrança' na auditoria</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-0-container-billing">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.billing.has_billing_address</code></li>
+              <li>getter: <code>getters['Audit/getAuditFlow''].routes_props.billing.has_billing_address</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_client_type</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Tipo Cliente' na auditoria e na venda</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-1-container-billing">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.billing.has_client_type</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.billing.has_client_type</code></li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.billing.has_client_type</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_contract_model</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Modelo do Contrato' na auditoria e na venda</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-2-container-billing">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.billing.has_contract_model</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.billing.has_contract_model</code>
+              </li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.billing.has_contract_model</code></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start flex-wrap">
+          <div class="table-content">
+            <div class="fw-bold mb-1">has_contract_type</div>
+            <ul class="mb-0">
+              <li>Exibe o campo 'Tipo Contrato' na auditoria e na venda</li>
+            </ul>
+          </div>
+          <div class="collapse table-content table-colapse-extra-content" id="readMore-3-container-billing">
+            <ul class="mb-0">
+              <li>list-sale: <code>list-sale.[fluxo].routes_props.billing.has_contract_type</code></li>
+              <li>getter:
+                <code>getters['Order/Core/getSelectedProviderSaleFlow'].routes_props.billing.has_contract_type</code>
+              </li>
+              <li>getter: <code>getters['Audit/getAuditFlow'].routes_props.billing.has_contract_type</code></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+</section>
           </div>
         </div>
       </div>
